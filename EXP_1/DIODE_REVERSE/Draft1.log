@@ -1,0 +1,6 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\EDC LAB\EXP_1\DIODE_REVERSE\Draft1.net
+Start Time: Sat Aug  1 11:40:52 2026
+C:\EDC LAB\EXP_1\DIODE_REVERSE\Draft1.net(4): Undefined model "1n4733a".
+D1 N002 N003 1N4733A
+             ^^^^^^^

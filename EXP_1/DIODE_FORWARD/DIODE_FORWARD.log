@@ -1,0 +1,14 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\EDC LAB\EXP_1\DIODE_FORWARD\DIODE_FORWARD.net
+Start Time: Sat Aug  1 13:56:29 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Total elapsed time: 0.054 seconds.
+
+Files loaded:
+C:\EDC LAB\EXP_1\DIODE_FORWARD\DIODE_FORWARD.net
+C:\Users\Suraj\AppData\Local\LTspice\lib\cmp\standard.dio
+

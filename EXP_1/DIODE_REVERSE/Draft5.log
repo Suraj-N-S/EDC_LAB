@@ -1,0 +1,15 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\EDC LAB\EXP_1\DIODE_REVERSE\Draft5.net
+Start Time: Sat Aug  1 16:38:51 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.062 seconds.
+
+Files loaded:
+C:\EDC LAB\EXP_1\DIODE_REVERSE\Draft5.net
+C:\Users\Suraj\AppData\Local\LTspice\lib\cmp\standard.dio
+
