@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
-Circuit: C:\EDC LAB\EXP_1\DIODE_REVERSE\DIODE_REVERSE.net
-Start Time: Sat Aug  1 13:58:27 2026
+Circuit: C:\EDC_LAB\EXP_1\DIODE_REVERSE\DIODE_REVERSE.net
+Start Time: Tue Aug  4 19:06:47 2026
 solver = Normal
 Maximum thread count: 8
 tnom = 27
@@ -10,6 +10,6 @@ method = trap
 Total elapsed time: 0.056 seconds.
 
 Files loaded:
-C:\EDC LAB\EXP_1\DIODE_REVERSE\DIODE_REVERSE.net
+C:\EDC_LAB\EXP_1\DIODE_REVERSE\DIODE_REVERSE.net
 C:\Users\Suraj\AppData\Local\LTspice\lib\cmp\standard.dio
 
