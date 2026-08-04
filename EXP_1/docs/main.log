@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  3 AUG 2026 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  5 AUG 2026 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,195 +502,254 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (30.37086pt too wide) in paragraph at lines 70--83
+Overfull \hbox (41.762pt too wide) in paragraph at lines 70--84
  [][] 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<EXP_1/DIODE_FORWARD/circuit.png, id=128, 764.10469pt x 430.60875pt>
-File: EXP_1/DIODE_FORWARD/circuit.png Graphic file (type png)
-<use EXP_1/DIODE_FORWARD/circuit.png>
-Package pdftex.def Info: EXP_1/DIODE_FORWARD/circuit.png  used on input line 10
-5.
-(pdftex.def)             Requested size: 249.13371pt x 140.39954pt.
-<EXP_1/DIODE_FORWARD/0-0.5v.png, id=130, 1444.64719pt x 633.86812pt>
-File: EXP_1/DIODE_FORWARD/0-0.5v.png Graphic file (type png)
-<use EXP_1/DIODE_FORWARD/0-0.5v.png>
-Package pdftex.def Info: EXP_1/DIODE_FORWARD/0-0.5v.png  used on input line 114
+<../DIODE_FORWARD/circuit.png, id=148, 764.10469pt x 430.60875pt>
+File: ../DIODE_FORWARD/circuit.png Graphic file (type png)
+<use ../DIODE_FORWARD/circuit.png>
+Package pdftex.def Info: ../DIODE_FORWARD/circuit.png  used on input line 105.
+(pdftex.def)             Requested size: 294.42636pt x 165.91957pt.
+<../DIODE_FORWARD/0-0.5v.png, id=150, 1443.14156pt x 658.71094pt>
+File: ../DIODE_FORWARD/0-0.5v.png Graphic file (type png)
+<use ../DIODE_FORWARD/0-0.5v.png>
+Package pdftex.def Info: ../DIODE_FORWARD/0-0.5v.png  used on input line 114.
+(pdftex.def)             Requested size: 217.42265pt x 99.23457pt.
+<../DIODE_FORWARD/0.5-0.75v.png, id=151, 1443.89438pt x 642.90187pt>
+File: ../DIODE_FORWARD/0.5-0.75v.png Graphic file (type png)
+<use ../DIODE_FORWARD/0.5-0.75v.png>
+Package pdftex.def Info: ../DIODE_FORWARD/0.5-0.75v.png  used on input line 120
 .
-(pdftex.def)             Requested size: 217.42265pt x 95.3953pt.
-<EXP_1/DIODE_FORWARD/0.5-0.75v.png, id=131, 1443.14156pt x 631.60968pt>
-File: EXP_1/DIODE_FORWARD/0.5-0.75v.png Graphic file (type png)
-<use EXP_1/DIODE_FORWARD/0.5-0.75v.png>
-Package pdftex.def Info: EXP_1/DIODE_FORWARD/0.5-0.75v.png  used on input line 
-120.
-(pdftex.def)             Requested size: 217.42265pt x 95.15178pt.
-<EXP_1/DIODE_REVERSE/circuit.png, id=132, 760.34062pt x 342.5297pt>
-File: EXP_1/DIODE_REVERSE/circuit.png Graphic file (type png)
-<use EXP_1/DIODE_REVERSE/circuit.png>
-Package pdftex.def Info: EXP_1/DIODE_REVERSE/circuit.png  used on input line 13
-2.
-(pdftex.def)             Requested size: 249.13371pt x 112.23026pt.
- [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./EXP_1/DIODE_
-FORWARD/circuit.png> <./EXP_1/DIODE_FORWARD/0-0.5v.png> <./EXP_1/DIODE_FORWARD/
-0.5-0.75v.png>]
-<EXP_1/DIODE_REVERSE/0-30v.png, id=146, 1440.13031pt x 635.37375pt>
-File: EXP_1/DIODE_REVERSE/0-30v.png Graphic file (type png)
-<use EXP_1/DIODE_REVERSE/0-30v.png>
-Package pdftex.def Info: EXP_1/DIODE_REVERSE/0-30v.png  used on input line 139.
-
-(pdftex.def)             Requested size: 294.42636pt x 129.89374pt.
- [3 <./EXP_1/DIODE_REVERSE/circuit.png> <./EXP_1/DIODE_REVERSE/0-30v.png>]
-<EXP_1/ZENER_FORWARD/circuit.png, id=155, 1080.28593pt x 458.46281pt>
-File: EXP_1/ZENER_FORWARD/circuit.png Graphic file (type png)
-<use EXP_1/ZENER_FORWARD/circuit.png>
-Package pdftex.def Info: EXP_1/ZENER_FORWARD/circuit.png  used on input line 15
-5.
-(pdftex.def)             Requested size: 249.13371pt x 105.72404pt.
-<EXP_1/ZENER_FORWARD/0-0.5v.png, id=156, 1439.3775pt x 633.86812pt>
-File: EXP_1/ZENER_FORWARD/0-0.5v.png Graphic file (type png)
-<use EXP_1/ZENER_FORWARD/0-0.5v.png>
-Package pdftex.def Info: EXP_1/ZENER_FORWARD/0-0.5v.png  used on input line 164
-.
-(pdftex.def)             Requested size: 217.42265pt x 95.74348pt.
-<EXP_1/ZENER_FORWARD/0.5-0.75.png, id=157, 1432.60219pt x 637.63219pt>
-File: EXP_1/ZENER_FORWARD/0.5-0.75.png Graphic file (type png)
-<use EXP_1/ZENER_FORWARD/0.5-0.75.png>
-Package pdftex.def Info: EXP_1/ZENER_FORWARD/0.5-0.75.png  used on input line 1
-70.
-(pdftex.def)             Requested size: 217.42265pt x 96.76932pt.
-<EXP_1/ZENER_REVERSE/circuit.png, id=158, 584.1825pt x 457.71pt>
-File: EXP_1/ZENER_REVERSE/circuit.png Graphic file (type png)
-<use EXP_1/ZENER_REVERSE/circuit.png>
-Package pdftex.def Info: EXP_1/ZENER_REVERSE/circuit.png  used on input line 18
-0.
-(pdftex.def)             Requested size: 249.13371pt x 195.19814pt.
- [4 <./EXP_1/ZENER_FORWARD/circuit.png> <./EXP_1/ZENER_FORWARD/0-0.5v.png> <./E
-XP_1/ZENER_FORWARD/0.5-0.75.png>]
-<EXP_1/ZENER_REVERSE/0-4v.png, id=168, 1440.88312pt x 633.86812pt>
-File: EXP_1/ZENER_REVERSE/0-4v.png Graphic file (type png)
-<use EXP_1/ZENER_REVERSE/0-4v.png>
-Package pdftex.def Info: EXP_1/ZENER_REVERSE/0-4v.png  used on input line 189.
-(pdftex.def)             Requested size: 144.95303pt x 63.75806pt.
-<EXP_1/ZENER_REVERSE/4-5.5v.png, id=169, 1440.13031pt x 629.35126pt>
-File: EXP_1/ZENER_REVERSE/4-5.5v.png Graphic file (type png)
-<use EXP_1/ZENER_REVERSE/4-5.5v.png>
-Package pdftex.def Info: EXP_1/ZENER_REVERSE/4-5.5v.png  used on input line 195
-.
-(pdftex.def)             Requested size: 144.95303pt x 63.34213pt.
-
-Underfull \hbox (badness 2189) in paragraph at lines 196--196
-[]\OT1/cmr/m/n/10 (b) |Break-down Knee ($4[]$ to
+(pdftex.def)             Requested size: 217.42265pt x 96.8039pt.
+<../DIODE_REVERSE/circuit.png, id=152, 760.34062pt x 342.5297pt>
+File: ../DIODE_REVERSE/circuit.png Graphic file (type png)
+<use ../DIODE_REVERSE/circuit.png>
+Package pdftex.def Info: ../DIODE_REVERSE/circuit.png  used on input line 130.
+(pdftex.def)             Requested size: 294.42636pt x 132.64003pt.
+ [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <../DIODE_FORWA
+RD/circuit.png> <../DIODE_FORWARD/0-0.5v.png> <../DIODE_FORWARD/0.5-0.75v.png>]
+<../DIODE_REVERSE/0-30v.png, id=166, 1443.89438pt x 636.87938pt>
+File: ../DIODE_REVERSE/0-30v.png Graphic file (type png)
+<use ../DIODE_REVERSE/0-30v.png>
+Package pdftex.def Info: ../DIODE_REVERSE/0-30v.png  used on input line 137.
+(pdftex.def)             Requested size: 339.72592pt x 149.8416pt.
+<../DIODE_READINGS/pn_diode_vi_linear.png, id=167, 578.16pt x 433.62pt>
+File: ../DIODE_READINGS/pn_diode_vi_linear.png Graphic file (type png)
+<use ../DIODE_READINGS/pn_diode_vi_linear.png>
+Package pdftex.def Info: ../DIODE_READINGS/pn_diode_vi_linear.png  used on inpu
+t line 174.
+(pdftex.def)             Requested size: 217.42265pt x 163.06363pt.
+<../DIODE_READINGS/pn_diode_vi_semilog.png, id=168, 578.16pt x 433.62pt>
+File: ../DIODE_READINGS/pn_diode_vi_semilog.png Graphic file (type png)
+<use ../DIODE_READINGS/pn_diode_vi_semilog.png>
+Package pdftex.def Info: ../DIODE_READINGS/pn_diode_vi_semilog.png  used on inp
+ut line 180.
+(pdftex.def)             Requested size: 217.42265pt x 163.06363pt.
+ [3 <../DIODE_REVERSE/circuit.png> <../DIODE_REVERSE/0-30v.png>]
+Overfull \hbox (6.51636pt too wide) in paragraph at lines 200--201
+[]\OT1/cmr/m/n/10.95 In high-conduction re-gion ($10\OML/cmm/m/it/10.95 :\OT1/c
+mr/m/n/10.95 22[]$ to $20\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 0[]$): $\OML/c
+mm/m/it/10.95 r[] \OT1/cmr/m/n/10.95 = [] = [] =
  []
 
-<EXP_1/ZENER_REVERSE/5.5+v.png, id=170, 1441.63594pt x 631.60968pt>
-File: EXP_1/ZENER_REVERSE/5.5+v.png Graphic file (type png)
-<use EXP_1/ZENER_REVERSE/5.5+v.png>
-Package pdftex.def Info: EXP_1/ZENER_REVERSE/5.5+v.png  used on input line 201.
+[4 <../DIODE_READINGS/pn_diode_vi_linear.png> <../DIODE_READINGS/pn_diode_vi_se
+milog.png>]
+<../ZENER_FORWARD/circuit.png, id=191, 1080.28593pt x 458.46281pt>
+File: ../ZENER_FORWARD/circuit.png Graphic file (type png)
+<use ../ZENER_FORWARD/circuit.png>
+Package pdftex.def Info: ../ZENER_FORWARD/circuit.png  used on input line 216.
+(pdftex.def)             Requested size: 294.42636pt x 124.94788pt.
+<../ZENER_FORWARD/0-0.5v.png, id=192, 1440.13031pt x 645.91313pt>
+File: ../ZENER_FORWARD/0-0.5v.png Graphic file (type png)
+<use ../ZENER_FORWARD/0-0.5v.png>
+Package pdftex.def Info: ../ZENER_FORWARD/0-0.5v.png  used on input line 225.
+(pdftex.def)             Requested size: 217.42265pt x 97.51355pt.
+<../ZENER_FORWARD/0.5-0.75v.png, id=193, 1443.14156pt x 640.64343pt>
+File: ../ZENER_FORWARD/0.5-0.75v.png Graphic file (type png)
+<use ../ZENER_FORWARD/0.5-0.75v.png>
+Package pdftex.def Info: ../ZENER_FORWARD/0.5-0.75v.png  used on input line 231
+.
+(pdftex.def)             Requested size: 217.42265pt x 96.51271pt.
+<../ZENER_REVERSE/circuit.png, id=194, 584.1825pt x 457.71pt>
+File: ../ZENER_REVERSE/circuit.png Graphic file (type png)
+<use ../ZENER_REVERSE/circuit.png>
+Package pdftex.def Info: ../ZENER_REVERSE/circuit.png  used on input line 241.
+(pdftex.def)             Requested size: 294.42636pt x 230.69125pt.
+ [5 <../ZENER_FORWARD/circuit.png> <../ZENER_FORWARD/0-0.5v.png> <../ZENER_FORW
+ARD/0.5-0.75v.png>]
+<../ZENER_REVERSE/0-4v.png, id=204, 1443.14156pt x 639.89063pt>
+File: ../ZENER_REVERSE/0-4v.png Graphic file (type png)
+<use ../ZENER_REVERSE/0-4v.png>
+Package pdftex.def Info: ../ZENER_REVERSE/0-4v.png  used on input line 250.
+(pdftex.def)             Requested size: 144.95303pt x 64.26619pt.
+<../ZENER_REVERSE/4-5.5v.png, id=205, 1440.88312pt x 638.385pt>
+File: ../ZENER_REVERSE/4-5.5v.png Graphic file (type png)
+<use ../ZENER_REVERSE/4-5.5v.png>
+Package pdftex.def Info: ../ZENER_REVERSE/4-5.5v.png  used on input line 256.
+(pdftex.def)             Requested size: 144.95303pt x 64.21239pt.
+<../ZENER_REVERSE/5.5+v.png, id=206, 1443.14156pt x 633.11531pt>
+File: ../ZENER_REVERSE/5.5+v.png Graphic file (type png)
+<use ../ZENER_REVERSE/5.5+v.png>
+Package pdftex.def Info: ../ZENER_REVERSE/5.5+v.png  used on input line 262.
+(pdftex.def)             Requested size: 144.95303pt x 63.58572pt.
+<../ZENER_FORWARD_READINGS/zener_diode_vi_linear.png, id=207, 578.16pt x 433.62
+pt>
+File: ../ZENER_FORWARD_READINGS/zener_diode_vi_linear.png Graphic file (type pn
+g)
+<use ../ZENER_FORWARD_READINGS/zener_diode_vi_linear.png>
+Package pdftex.def Info: ../ZENER_FORWARD_READINGS/zener_diode_vi_linear.png  u
+sed on input line 298.
+(pdftex.def)             Requested size: 217.42265pt x 163.06363pt.
+<../ZENER_FORWARD_READINGS/zener_diode_vi_semilog.png, id=208, 578.16pt x 433.6
+2pt>
+File: ../ZENER_FORWARD_READINGS/zener_diode_vi_semilog.png Graphic file (type p
+ng)
+<use ../ZENER_FORWARD_READINGS/zener_diode_vi_semilog.png>
+Package pdftex.def Info: ../ZENER_FORWARD_READINGS/zener_diode_vi_semilog.png  
+used on input line 304.
+(pdftex.def)             Requested size: 217.42265pt x 163.06363pt.
+ [6 <../ZENER_REVERSE/circuit.png> <../ZENER_REVERSE/0-4v.png> <../ZENER_REVERS
+E/4-5.5v.png> <../ZENER_REVERSE/5.5+v.png>]
+[7 <../ZENER_FORWARD_READINGS/zener_diode_vi_linear.png> <../ZENER_FORWARD_READ
+INGS/zener_diode_vi_semilog.png>]
+<../POSITIVE_CLIPPER/circuit.png, id=229, 989.19562pt x 572.89032pt>
+File: ../POSITIVE_CLIPPER/circuit.png Graphic file (type png)
+<use ../POSITIVE_CLIPPER/circuit.png>
+Package pdftex.def Info: ../POSITIVE_CLIPPER/circuit.png  used on input line 33
+4.
+(pdftex.def)             Requested size: 144.95303pt x 83.9455pt.
+<../POSITIVE_CLIPPER/sim.png, id=230, 1442.38875pt x 667.74469pt>
+File: ../POSITIVE_CLIPPER/sim.png Graphic file (type png)
+<use ../POSITIVE_CLIPPER/sim.png>
+Package pdftex.def Info: ../POSITIVE_CLIPPER/sim.png  used on input line 340.
+(pdftex.def)             Requested size: 144.95303pt x 67.10442pt.
+<../POSITIVE_CLIPPER/dso_pos_clip.jpeg, id=231, 4175.6pt x 3131.7pt>
+File: ../POSITIVE_CLIPPER/dso_pos_clip.jpeg Graphic file (type jpg)
+<use ../POSITIVE_CLIPPER/dso_pos_clip.jpeg>
+Package pdftex.def Info: ../POSITIVE_CLIPPER/dso_pos_clip.jpeg  used on input l
+ine 346.
+(pdftex.def)             Requested size: 144.95303pt x 108.71277pt.
+<../NEGATIVE_CLIPPER/circuit.png, id=232, 1099.85907pt x 592.46344pt>
+File: ../NEGATIVE_CLIPPER/circuit.png Graphic file (type png)
+<use ../NEGATIVE_CLIPPER/circuit.png>
+Package pdftex.def Info: ../NEGATIVE_CLIPPER/circuit.png  used on input line 35
+9.
+(pdftex.def)             Requested size: 144.95303pt x 78.08066pt.
+<../NEGATIVE_CLIPPER/sim.png, id=233, 1442.38875pt x 646.66594pt>
+File: ../NEGATIVE_CLIPPER/sim.png Graphic file (type png)
+<use ../NEGATIVE_CLIPPER/sim.png>
+Package pdftex.def Info: ../NEGATIVE_CLIPPER/sim.png  used on input line 365.
+(pdftex.def)             Requested size: 144.95303pt x 64.98613pt.
+<../NEGATIVE_CLIPPER/dso_neg_clip.jpeg, id=234, 4175.6pt x 3131.7pt>
+File: ../NEGATIVE_CLIPPER/dso_neg_clip.jpeg Graphic file (type jpg)
+<use ../NEGATIVE_CLIPPER/dso_neg_clip.jpeg>
+Package pdftex.def Info: ../NEGATIVE_CLIPPER/dso_neg_clip.jpeg  used on input l
+ine 371.
+(pdftex.def)             Requested size: 144.95303pt x 108.71277pt.
+<../BIASED_CLIPPER/circuit.png, id=235, 944.02687pt x 619.56468pt>
+File: ../BIASED_CLIPPER/circuit.png Graphic file (type png)
+<use ../BIASED_CLIPPER/circuit.png>
+Package pdftex.def Info: ../BIASED_CLIPPER/circuit.png  used on input line 384.
 
-(pdftex.def)             Requested size: 144.95303pt x 63.50198pt.
-[5 <./EXP_1/ZENER_REVERSE/circuit.png> <./EXP_1/ZENER_REVERSE/0-4v.png> <./EXP_
-1/ZENER_REVERSE/4-5.5v.png> <./EXP_1/ZENER_REVERSE/5.5+v.png>]
-<EXP_1/POSITIVE_CLIPPER/circuit.png, id=181, 627.84563pt x 443.40656pt>
-File: EXP_1/POSITIVE_CLIPPER/circuit.png Graphic file (type png)
-<use EXP_1/POSITIVE_CLIPPER/circuit.png>
-Package pdftex.def Info: EXP_1/POSITIVE_CLIPPER/circuit.png  used on input line
- 226.
-(pdftex.def)             Requested size: 217.42265pt x 153.55052pt.
-<EXP_1/POSITIVE_CLIPPER/sim.png, id=182, 1437.11906pt x 639.13782pt>
-File: EXP_1/POSITIVE_CLIPPER/sim.png Graphic file (type png)
-<use EXP_1/POSITIVE_CLIPPER/sim.png>
-Package pdftex.def Info: EXP_1/POSITIVE_CLIPPER/sim.png  used on input line 232
-.
-(pdftex.def)             Requested size: 217.42265pt x 96.6955pt.
-<EXP_1/NEGATIVE_CLIPPER/circuit.png, id=183, 730.22812pt x 438.13687pt>
-File: EXP_1/NEGATIVE_CLIPPER/circuit.png Graphic file (type png)
-<use EXP_1/NEGATIVE_CLIPPER/circuit.png>
-Package pdftex.def Info: EXP_1/NEGATIVE_CLIPPER/circuit.png  used on input line
- 244.
-(pdftex.def)             Requested size: 217.42265pt x 130.45262pt.
-<EXP_1/NEGATIVE_CLIPPER/sim.png, id=184, 1443.89438pt x 633.11531pt>
-File: EXP_1/NEGATIVE_CLIPPER/sim.png Graphic file (type png)
-<use EXP_1/NEGATIVE_CLIPPER/sim.png>
-Package pdftex.def Info: EXP_1/NEGATIVE_CLIPPER/sim.png  used on input line 250
-.
-(pdftex.def)             Requested size: 217.42265pt x 95.33029pt.
-<EXP_1/BIASED_CLIPPER/circuit.png, id=185, 657.2053pt x 494.59781pt>
-File: EXP_1/BIASED_CLIPPER/circuit.png Graphic file (type png)
-<use EXP_1/BIASED_CLIPPER/circuit.png>
-Package pdftex.def Info: EXP_1/BIASED_CLIPPER/circuit.png  used on input line 2
-62.
-(pdftex.def)             Requested size: 217.42265pt x 163.6253pt.
-<EXP_1/BIASED_CLIPPER/sim.png, id=186, 1440.88312pt x 637.63219pt>
-File: EXP_1/BIASED_CLIPPER/sim.png Graphic file (type png)
-<use EXP_1/BIASED_CLIPPER/sim.png>
-Package pdftex.def Info: EXP_1/BIASED_CLIPPER/sim.png  used on input line 268.
-(pdftex.def)             Requested size: 217.42265pt x 96.21474pt.
- [6 <./EXP_1/POSITIVE_CLIPPER/circuit.png> <./EXP_1/POSITIVE_CLIPPER/sim.png> <
-./EXP_1/NEGATIVE_CLIPPER/circuit.png> <./EXP_1/NEGATIVE_CLIPPER/sim.png>] [7 <.
-/EXP_1/BIASED_CLIPPER/circuit.png> <./EXP_1/BIASED_CLIPPER/sim.png>]
-<EXP_1/POSITIVE_CLAMPER/circuit.png, id=206, 920.68968pt x 417.81094pt>
-File: EXP_1/POSITIVE_CLAMPER/circuit.png Graphic file (type png)
-<use EXP_1/POSITIVE_CLAMPER/circuit.png>
-Package pdftex.def Info: EXP_1/POSITIVE_CLAMPER/circuit.png  used on input line
- 292.
-(pdftex.def)             Requested size: 217.42265pt x 98.66373pt.
-<EXP_1/POSITIVE_CLAMPER/sim.png, id=207, 1440.88312pt x 638.385pt>
-File: EXP_1/POSITIVE_CLAMPER/sim.png Graphic file (type png)
-<use EXP_1/POSITIVE_CLAMPER/sim.png>
-Package pdftex.def Info: EXP_1/POSITIVE_CLAMPER/sim.png  used on input line 298
-.
-(pdftex.def)             Requested size: 217.42265pt x 96.32832pt.
-<EXP_1/NEGATIVE_CLAMPER/circuit.png, id=208, 931.98187pt x 453.94594pt>
-File: EXP_1/NEGATIVE_CLAMPER/circuit.png Graphic file (type png)
-<use EXP_1/NEGATIVE_CLAMPER/circuit.png>
-Package pdftex.def Info: EXP_1/NEGATIVE_CLAMPER/circuit.png  used on input line
- 310.
-(pdftex.def)             Requested size: 217.42265pt x 105.90152pt.
-<EXP_1/NEGATIVE_CLAMPER/sim.png, id=209, 1443.89438pt x 636.87938pt>
-File: EXP_1/NEGATIVE_CLAMPER/sim.png Graphic file (type png)
-<use EXP_1/NEGATIVE_CLAMPER/sim.png>
-Package pdftex.def Info: EXP_1/NEGATIVE_CLAMPER/sim.png  used on input line 316
-.
-(pdftex.def)             Requested size: 217.42265pt x 95.89706pt.
- [8 <./EXP_1/POSITIVE_CLAMPER/circuit.png> <./EXP_1/POSITIVE_CLAMPER/sim.png> <
-./EXP_1/NEGATIVE_CLAMPER/circuit.png> <./EXP_1/NEGATIVE_CLAMPER/sim.png>]
-Overfull \hbox (41.15527pt too wide) in paragraph at lines 352--363
+(pdftex.def)             Requested size: 144.95303pt x 95.13342pt.
+<../BIASED_CLIPPER/sim.png, id=236, 1440.88312pt x 666.99188pt>
+File: ../BIASED_CLIPPER/sim.png Graphic file (type png)
+<use ../BIASED_CLIPPER/sim.png>
+Package pdftex.def Info: ../BIASED_CLIPPER/sim.png  used on input line 390.
+(pdftex.def)             Requested size: 144.95303pt x 67.08983pt.
+<../BIASED_CLIPPER/dso_biased_clip_1.jpeg, id=237, 4175.6pt x 3131.7pt>
+File: ../BIASED_CLIPPER/dso_biased_clip_1.jpeg Graphic file (type jpg)
+<use ../BIASED_CLIPPER/dso_biased_clip_1.jpeg>
+Package pdftex.def Info: ../BIASED_CLIPPER/dso_biased_clip_1.jpeg  used on inpu
+t line 396.
+(pdftex.def)             Requested size: 144.95303pt x 108.71277pt.
+ [8 <../POSITIVE_CLIPPER/circuit.png> <../POSITIVE_CLIPPER/sim.png> <../POSITIV
+E_CLIPPER/dso_pos_clip.jpeg> <../NEGATIVE_CLIPPER/circuit.png> <../NEGATIVE_CLI
+PPER/sim.png> <../NEGATIVE_CLIPPER/dso_neg_clip.jpeg>]
+Overfull \hbox (219.70322pt too wide) in paragraph at lines 407--416
  [][] 
  []
 
-[9] (./main.aux)
+[9 <../BIASED_CLIPPER/circuit.png> <../BIASED_CLIPPER/sim.png> <../BIASED_CLIPP
+ER/dso_biased_clip_1.jpeg>]
+<../POSITIVE_CLAMPER/circuit.png, id=256, 1156.32pt x 559.33969pt>
+File: ../POSITIVE_CLAMPER/circuit.png Graphic file (type png)
+<use ../POSITIVE_CLAMPER/circuit.png>
+Package pdftex.def Info: ../POSITIVE_CLAMPER/circuit.png  used on input line 43
+2.
+(pdftex.def)             Requested size: 144.95303pt x 70.11359pt.
+<../POSITIVE_CLAMPER/sim.png, id=257, 1440.88312pt x 646.66594pt>
+File: ../POSITIVE_CLAMPER/sim.png Graphic file (type png)
+<use ../POSITIVE_CLAMPER/sim.png>
+Package pdftex.def Info: ../POSITIVE_CLAMPER/sim.png  used on input line 438.
+(pdftex.def)             Requested size: 144.95303pt x 65.04533pt.
+<../POSITIVE_CLAMPER/dso_pos_clamp.jpeg, id=258, 4047.12pt x 3035.34pt>
+File: ../POSITIVE_CLAMPER/dso_pos_clamp.jpeg Graphic file (type jpg)
+<use ../POSITIVE_CLAMPER/dso_pos_clamp.jpeg>
+Package pdftex.def Info: ../POSITIVE_CLAMPER/dso_pos_clamp.jpeg  used on input 
+line 444.
+(pdftex.def)             Requested size: 144.95303pt x 108.70247pt.
+<../NEGATIVE_CLAMPER/circuit.png, id=259, 1154.06157pt x 554.07pt>
+File: ../NEGATIVE_CLAMPER/circuit.png Graphic file (type png)
+<use ../NEGATIVE_CLAMPER/circuit.png>
+Package pdftex.def Info: ../NEGATIVE_CLAMPER/circuit.png  used on input line 45
+7.
+(pdftex.def)             Requested size: 144.95303pt x 69.5883pt.
+<../NEGATIVE_CLAMPER/sim.png, id=260, 1440.88312pt x 642.90187pt>
+File: ../NEGATIVE_CLAMPER/sim.png Graphic file (type png)
+<use ../NEGATIVE_CLAMPER/sim.png>
+Package pdftex.def Info: ../NEGATIVE_CLAMPER/sim.png  used on input line 463.
+(pdftex.def)             Requested size: 144.95303pt x 64.66672pt.
+<../NEGATIVE_CLAMPER/dso_neg_clamp.jpeg, id=261, 4047.12pt x 3035.34pt>
+File: ../NEGATIVE_CLAMPER/dso_neg_clamp.jpeg Graphic file (type jpg)
+<use ../NEGATIVE_CLAMPER/dso_neg_clamp.jpeg>
+Package pdftex.def Info: ../NEGATIVE_CLAMPER/dso_neg_clamp.jpeg  used on input 
+line 469.
+(pdftex.def)             Requested size: 144.95303pt x 108.70247pt.
+
+Overfull \hbox (308.59885pt too wide) in paragraph at lines 480--488
+ [][] 
+ []
+
+[10 <../POSITIVE_CLAMPER/circuit.png> <../POSITIVE_CLAMPER/sim.png> <../POSITIV
+E_CLAMPER/dso_pos_clamp.jpeg> <../NEGATIVE_CLAMPER/circuit.png> <../NEGATIVE_CL
+AMPER/sim.png> <../NEGATIVE_CLAMPER/dso_neg_clamp.jpeg>] [11] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C2D6CF28C46F952FFB0D9F1BDD3C4BB7;6075.
+(rerunfilecheck)             Checksum: D0D088D687CE1E328E749208702D0CC7;7642.
  ) 
 Here is how much of TeX's memory you used:
- 12897 strings out of 474222
- 203422 string characters out of 5748734
+ 12993 strings out of 474222
+ 206450 string characters out of 5748734
  1941975 words of memory out of 5000000
- 34940 multiletter control sequences out of 15000+600000
- 567848 words of font info for 73 fonts, out of 8000000 for 9000
+ 35015 multiletter control sequences out of 15000+600000
+ 569343 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,441b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,558b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.
-pfb>
-Output written on main.pdf (9 pages, 506731 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (11 pages, 5997854 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 327 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 361 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 412 words of extra memory for PDF output out of 10000 (max. 10000000)
 
