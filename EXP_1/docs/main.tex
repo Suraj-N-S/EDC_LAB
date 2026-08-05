@@ -109,13 +109,13 @@ where $I_s$ is the reverse saturation current, $V_T = \frac{k T}{q}$ is the ther
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.42\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../DIODE_FORWARD/0-0.5v.png}
         \caption{Low Voltage Sweep ($0\text{ V}$ to $0.5\text{ V}$)}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.42\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../DIODE_FORWARD/0.5-0.75v.png}
         \caption{Knee Region Sweep ($0.5\text{ V}$ to $0.75\text{ V}$)}
@@ -184,6 +184,15 @@ The experimental readings were plotted using Matplotlib in both linear scale ($I
     \label{fig:pn_diode_exp_plots}
 \end{figure}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../GRAPHS/diode_forward.jpeg}
+    \caption{Graph-Paper Plot of the Forward-Bias $V$--$I$ Characteristics of PN Junction Diode.}
+    \label{fig:pn_diode_graph_plot}
+\end{figure}
+
+\newpage
+
 \subsection{Calculated Parameters (PN Diode)}
 \begin{itemize}
     \item \textbf{Cut-in Voltage (\boldmath{$V_\gamma$}):} \textbf{$\approx 0.60\text{ V}$} (exponential current rise begins above $0.6\text{ V}$).
@@ -202,7 +211,7 @@ The experimental readings were plotted using Matplotlib in both linear scale ($I
     \item \textbf{Reverse Saturation Current (\boldmath{$I_s$}):} \textbf{$I_s < 1\text{ }\mu\text{A}$} ($0\text{ mA}$ measured from $0\text{ V}$ to $30\text{ V}$).
 \end{itemize}
 
-\newpage
+
 \section{Part B: Zener Diode Characteristics}
 
 \subsection{Theoretical Background}
@@ -308,6 +317,23 @@ A Zener diode is designed to operate safely in reverse breakdown (\textbf{$V_Z$}
     \label{fig:zener_diode_exp_plots}
 \end{figure}
 
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../GRAPHS/zener_forward.jpeg}
+        \caption{Graph-Paper Plot of the Forward-Bias $V$--$I$ Characteristics.}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../GRAPHS/zener_reverse.jpeg}
+        \caption{Graph-Paper Plot of the Reverse-Bias $V$--$I$ Characteristics.}
+    \end{subfigure}
+    \caption{Graph-Paper Plots for Zener Diode (1N4733A).}
+    \label{fig:zener_diode_graph_plots}
+\end{figure}
+
 \subsection{Calculated Parameters (Zener Diode)}
 \begin{itemize}
     \item \textbf{Zener Breakdown Voltage (\boldmath{$V_Z$}):} \textbf{Breakdown starts at $V_Z \approx 5.00\text{ V}$ and stabilizes up to $5.25\text{ V}$ at $20\text{ mA}$}.
@@ -374,6 +400,8 @@ In negative clipping, the diode conducts when $V_{in} < -1\text{ V} - V_\gamma$,
     \caption{Negative Clipper Circuit, Simulation, and Measured DSO Waveform (Clipped at $-1.68\text{ V}$).}
     \label{fig:neg_clipper}
 \end{figure}
+
+\newpage
 
 \subsubsection{Biased Clipper (Two-Level Clipper)}
 Both positive and negative peaks are clipped independently. The upper limit clipped at $+1.20\text{ V}$ and lower limit clipped at $-0.92\text{ V}$.
