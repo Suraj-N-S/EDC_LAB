@@ -1,18 +1,18 @@
 LTspice 26.0.1 for Windows
-Circuit: C:\Users\Sai Krishna Bakki\OneDrive\Desktop\EDC_2\CE-Configuration\Draft1.net
-Start Time: Mon Aug 10 22:30:54 2026
+Circuit: C:\EDC_LAB\EXP_2\CE-Configuration\Draft1.net
+Start Time: Tue Aug 11 11:02:39 2026
 solver = Normal
-Maximum thread count: 16
+Maximum thread count: 8
 tnom = 27
 temp = 27
 method = trap
-C:\Users\Sai Krishna Bakki\OneDrive\Desktop\EDC_2\CE-Configuration\Draft1.net(5): Missing value, assuming 0V @ DC.
+C:\EDC_LAB\EXP_2\CE-Configuration\Draft1.net(5): Missing value, assuming 0V @ DC.
 
 V2 N001 0 Rser=0.001
 ^^^^^^^^^^^^^^^^^^^^
-Total elapsed time: 0.128 seconds.
+Total elapsed time: 0.162 seconds.
 
 Files loaded:
-C:\Users\Sai Krishna Bakki\OneDrive\Desktop\EDC_2\CE-Configuration\Draft1.net
-C:\Users\Sai Krishna Bakki\AppData\Local\LTspice\lib\cmp\standard.bjt
+C:\EDC_LAB\EXP_2\CE-Configuration\Draft1.net
+C:\Users\Suraj\AppData\Local\LTspice\lib\cmp\standard.bjt
 
