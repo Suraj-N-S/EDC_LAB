@@ -1,0 +1,14 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\EDC_LAB\EXP_1\POSITIVE_CLAMPER\Draft1.net
+Start Time: Mon Aug 24 10:35:59 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Total elapsed time: 0.175 seconds.
+
+Files loaded:
+C:\EDC_LAB\EXP_1\POSITIVE_CLAMPER\Draft1.net
+C:\Users\Suraj\AppData\Local\LTspice\lib\cmp\standard.bjt
+
