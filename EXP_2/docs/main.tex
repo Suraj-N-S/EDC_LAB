@@ -363,8 +363,10 @@ In the Common Emitter (CE) configuration, the emitter terminal is common to both
     \end{itemize}
     \item \textbf{Key Inferences (CE Configuration):}
     \begin{itemize}
-        \item \textbf{Input Characteristic:} Resembles a forward-biased diode with \textbf{$V_\gamma \approx 0.60\text{ V}$}. Increasing $V_{CE}$ causes Early effect (base-width modulation), shifting the input curve slightly downward/rightward.
-        \item \textbf{Output Characteristic:} Exhibits distinct saturation ($V_{CE} < 0.5\text{ V}$) and active regions. High current gain (\textbf{$\beta \approx 352.5$}) and medium output resistance (\textbf{$r_o \approx 1.45\text{--}9.00\text{ k}\Omega$}) make CE ideal for general voltage amplification.
+        \item \textbf{Input Characteristic:} Resembles a forward-biased diode with \textbf{$V_\gamma \approx 0.60\text{ V}$}.\\
+        \textbf{Comparison with Simulation : } The cut-off voltage in simulation is around 0.6\text{V} which matches with the experimental observation.
+        \item \textbf{Output Characteristic:} Exhibits saturation and active regions. High current gain (\textbf{$\beta \approx 352.5$}) and medium output resistance (\textbf{$r_o \approx 1.45\text{--}9.00\text{ k}\Omega$}) make CE ideal for general voltage amplification.\\
+        \textbf{Comparison with Simulation : } Similar to simulation , the experimental values of IC saturate for lower values of VCE and gradually increases as VCE increases.
     \end{itemize}
 \end{itemize}
 
@@ -507,22 +509,22 @@ In the Common Base (CB) configuration, the base terminal is grounded and common 
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.30\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../PLOTS/CB_OUTPUT/IE=2m.png}
-        \caption{$I_E = 2\text{ mA}$}
+        \caption{$I_E = 2\text{ mA}$\\\textbf{Note :} The scale of Y axis is less,hence it appears as a jump but the jump is just of 0.01mA.}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.30\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../PLOTS/CB_OUTPUT/IE=6m.png}
         \caption{$I_E = 6\text{ mA}$}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.30\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../PLOTS/CB_OUTPUT/IE=10m.png}
-        \caption{$I_E = 10\text{ mA}$}
+        \caption{$I_E = 10\text{ mA}$\\\textbf{Note :} The scale of Y axis is less,hence there are jumps in the plot but the values are close to each other.}
     \end{subfigure}
     \caption{Experimental CB Output Characteristics Plots ($I_C$ vs $V_{CB}$).}
     \label{fig:cb_output_exp_plots}

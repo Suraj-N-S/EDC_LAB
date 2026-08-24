@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  22 AUG 2026 09:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  24 AUG 2026 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -605,279 +605,279 @@ Package pdftex.def Info: ../PLOTS/CE_OUTPUT/combined.png  used on input line 321
 <../CB-Configuration/Schematic.png, id=231, 1080.28593pt x 565.36218pt>
 File: ../CB-Configuration/Schematic.png Graphic file (type png)
 <use ../CB-Configuration/Schematic.png>
-Package pdftex.def Info: ../CB-Configuration/Schematic.png  used on input line 391.
+Package pdftex.def Info: ../CB-Configuration/Schematic.png  used on input line 393.
 (pdftex.def)             Requested size: 265.03296pt x 138.70041pt.
 <../CB-Configuration/input/input_0-0.4.png, id=232, 1083.29718pt x 546.54187pt>
 File: ../CB-Configuration/input/input_0-0.4.png Graphic file (type png)
 <use ../CB-Configuration/input/input_0-0.4.png>
-Package pdftex.def Info: ../CB-Configuration/input/input_0-0.4.png  used on input line 401.
+Package pdftex.def Info: ../CB-Configuration/input/input_0-0.4.png  used on input line 403.
 (pdftex.def)             Requested size: 216.84248pt x 109.39816pt.
 <../CB-Configuration/input/input_0.4-0.7.png, id=233, 1084.05pt x 542.77782pt>
 File: ../CB-Configuration/input/input_0.4-0.7.png Graphic file (type png)
 <use ../CB-Configuration/input/input_0.4-0.7.png>
-Package pdftex.def Info: ../CB-Configuration/input/input_0.4-0.7.png  used on input line 407.
+Package pdftex.def Info: ../CB-Configuration/input/input_0.4-0.7.png  used on input line 409.
 (pdftex.def)             Requested size: 216.84248pt x 108.57019pt.
 <../CB-Configuration/output/output_0-2.png, id=234, 1083.29718pt x 542.025pt>
 File: ../CB-Configuration/output/output_0-2.png Graphic file (type png)
 <use ../CB-Configuration/output/output_0-2.png>
-Package pdftex.def Info: ../CB-Configuration/output/output_0-2.png  used on input line 419.
+Package pdftex.def Info: ../CB-Configuration/output/output_0-2.png  used on input line 421.
 (pdftex.def)             Requested size: 216.84248pt x 108.49405pt.
 <../CB-Configuration/output/output_2-20.png, id=235, 1081.79156pt x 548.80031pt>
 File: ../CB-Configuration/output/output_2-20.png Graphic file (type png)
 <use ../CB-Configuration/output/output_2-20.png>
-Package pdftex.def Info: ../CB-Configuration/output/output_2-20.png  used on input line 425.
+Package pdftex.def Info: ../CB-Configuration/output/output_2-20.png  used on input line 427.
 (pdftex.def)             Requested size: 216.84248pt x 110.00096pt.
  [8
 
  <../CB-Configuration/Schematic.png> <../CB-Configuration/input/input_0-0.4.png> <../CB-Configuration/input/input_0.4-0.7.png>]
-Overfull \hbox (4.11597pt too wide) in alignment at lines 434--439
+Overfull \hbox (4.11597pt too wide) in alignment at lines 436--441
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (4.11597pt too wide) in alignment at lines 439--465
+Overfull \hbox (4.11597pt too wide) in alignment at lines 441--467
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (9.87883pt too wide) in alignment at lines 467--472
+Overfull \hbox (9.87883pt too wide) in alignment at lines 469--474
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (9.87883pt too wide) in alignment at lines 472--482
+Overfull \hbox (9.87883pt too wide) in alignment at lines 474--484
  [] [] [] [] [] 
  []
 
 [9 <../CB-Configuration/output/output_0-2.png> <../CB-Configuration/output/output_2-20.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 484.
+(hyperref)                removing `math shift' on input line 486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 484.
+(hyperref)                removing `math shift' on input line 486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 484.
+(hyperref)                removing `math shift' on input line 486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 484.
+(hyperref)                removing `math shift' on input line 486.
 
 <../PLOTS/CB_INPUT/VCB=0.png, id=257, 448.67625pt x 271.0125pt>
 File: ../PLOTS/CB_INPUT/VCB=0.png Graphic file (type png)
 <use ../PLOTS/CB_INPUT/VCB=0.png>
-Package pdftex.def Info: ../PLOTS/CB_INPUT/VCB=0.png  used on input line 489.
+Package pdftex.def Info: ../PLOTS/CB_INPUT/VCB=0.png  used on input line 491.
 (pdftex.def)             Requested size: 149.3802pt x 90.22838pt.
 <../PLOTS/CB_INPUT/VCB=5.png, id=258, 454.69875pt x 271.0125pt>
 File: ../PLOTS/CB_INPUT/VCB=5.png Graphic file (type png)
 <use ../PLOTS/CB_INPUT/VCB=5.png>
-Package pdftex.def Info: ../PLOTS/CB_INPUT/VCB=5.png  used on input line 495.
+Package pdftex.def Info: ../PLOTS/CB_INPUT/VCB=5.png  used on input line 497.
 (pdftex.def)             Requested size: 149.3802pt x 89.03326pt.
 <../PLOTS/CB_INPUT/VCB=10.png, id=259, 450.9347pt x 268.00125pt>
 File: ../PLOTS/CB_INPUT/VCB=10.png Graphic file (type png)
 <use ../PLOTS/CB_INPUT/VCB=10.png>
-Package pdftex.def Info: ../PLOTS/CB_INPUT/VCB=10.png  used on input line 501.
+Package pdftex.def Info: ../PLOTS/CB_INPUT/VCB=10.png  used on input line 503.
 (pdftex.def)             Requested size: 149.3802pt x 88.78009pt.
 <../PLOTS/CB_OUTPUT/IE=2m.png, id=260, 448.67625pt x 268.75406pt>
 File: ../PLOTS/CB_OUTPUT/IE=2m.png Graphic file (type png)
 <use ../PLOTS/CB_OUTPUT/IE=2m.png>
-Package pdftex.def Info: ../PLOTS/CB_OUTPUT/IE=2m.png  used on input line 512.
-(pdftex.def)             Requested size: 149.3802pt x 89.47647pt.
+Package pdftex.def Info: ../PLOTS/CB_OUTPUT/IE=2m.png  used on input line 514.
+(pdftex.def)             Requested size: 144.5641pt x 86.58948pt.
 <../PLOTS/CB_OUTPUT/IE=6m.png, id=261, 448.67625pt x 269.50688pt>
 File: ../PLOTS/CB_OUTPUT/IE=6m.png Graphic file (type png)
 <use ../PLOTS/CB_OUTPUT/IE=6m.png>
-Package pdftex.def Info: ../PLOTS/CB_OUTPUT/IE=6m.png  used on input line 518.
-(pdftex.def)             Requested size: 149.3802pt x 89.72711pt.
+Package pdftex.def Info: ../PLOTS/CB_OUTPUT/IE=6m.png  used on input line 520.
+(pdftex.def)             Requested size: 144.5641pt x 86.83202pt.
 <../PLOTS/CB_OUTPUT/IE=10m.png, id=262, 505.89pt x 325.215pt>
 File: ../PLOTS/CB_OUTPUT/IE=10m.png Graphic file (type png)
 <use ../PLOTS/CB_OUTPUT/IE=10m.png>
-Package pdftex.def Info: ../PLOTS/CB_OUTPUT/IE=10m.png  used on input line 524.
-(pdftex.def)             Requested size: 149.3802pt x 96.03188pt.
+Package pdftex.def Info: ../PLOTS/CB_OUTPUT/IE=10m.png  used on input line 526.
+(pdftex.def)             Requested size: 144.5641pt x 92.93535pt.
 <../PLOTS/CB_INPUT/combined.png, id=263, 469.755pt x 303.534pt>
 File: ../PLOTS/CB_INPUT/combined.png Graphic file (type png)
 <use ../PLOTS/CB_INPUT/combined.png>
-Package pdftex.def Info: ../PLOTS/CB_INPUT/combined.png  used on input line 535.
+Package pdftex.def Info: ../PLOTS/CB_INPUT/combined.png  used on input line 537.
 (pdftex.def)             Requested size: 231.29816pt x 149.45084pt.
 <../PLOTS/CB_OUTPUT/combined.png, id=264, 469.755pt x 303.534pt>
 File: ../PLOTS/CB_OUTPUT/combined.png Graphic file (type png)
 <use ../PLOTS/CB_OUTPUT/combined.png>
-Package pdftex.def Info: ../PLOTS/CB_OUTPUT/combined.png  used on input line 541.
+Package pdftex.def Info: ../PLOTS/CB_OUTPUT/combined.png  used on input line 543.
 (pdftex.def)             Requested size: 231.29816pt x 149.45084pt.
 [10 <../PLOTS/CB_INPUT/VCB=0.png> <../PLOTS/CB_INPUT/VCB=5.png> <../PLOTS/CB_INPUT/VCB=10.png> <../PLOTS/CB_OUTPUT/IE=2m.png> <../PLOTS/CB_OUTPUT/IE=6m.png> <../PLOTS/CB_OUTPUT/IE=10m.png> <../PLOTS/CB_INPUT/combined.png> <../PLOTS/CB_OUTPUT/combined.png>] [11]
 <../CC-Configutation/Schematic.png, id=284, 560.8453pt x 393.72093pt>
 File: ../CC-Configutation/Schematic.png Graphic file (type png)
 <use ../CC-Configutation/Schematic.png>
-Package pdftex.def Info: ../CC-Configutation/Schematic.png  used on input line 600.
+Package pdftex.def Info: ../CC-Configutation/Schematic.png  used on input line 602.
 (pdftex.def)             Requested size: 265.03296pt x 186.05214pt.
 <../CC-Configutation/input/input_VEC=1.png, id=285, 1081.79156pt x 545.03625pt>
 File: ../CC-Configutation/input/input_VEC=1.png Graphic file (type png)
 <use ../CC-Configutation/input/input_VEC=1.png>
-Package pdftex.def Info: ../CC-Configutation/input/input_VEC=1.png  used on input line 610.
+Package pdftex.def Info: ../CC-Configutation/input/input_VEC=1.png  used on input line 612.
 (pdftex.def)             Requested size: 216.84248pt x 109.24649pt.
 <../CC-Configutation/input/input_VEC=5,10.png, id=286, 1084.05pt x 545.78906pt>
 File: ../CC-Configutation/input/input_VEC=5,10.png Graphic file (type png)
 <use ../CC-Configutation/input/input_VEC=5,10.png>
-Package pdftex.def Info: ../CC-Configutation/input/input_VEC=5,10.png  used on input line 616.
+Package pdftex.def Info: ../CC-Configutation/input/input_VEC=5,10.png  used on input line 618.
 (pdftex.def)             Requested size: 216.84248pt x 109.17253pt.
 <../CC-Configutation/output/output_0-2.png, id=287, 1082.54437pt x 548.80031pt>
 File: ../CC-Configutation/output/output_0-2.png Graphic file (type png)
 <use ../CC-Configutation/output/output_0-2.png>
-Package pdftex.def Info: ../CC-Configutation/output/output_0-2.png  used on input line 628.
+Package pdftex.def Info: ../CC-Configutation/output/output_0-2.png  used on input line 630.
 (pdftex.def)             Requested size: 216.84248pt x 109.92558pt.
 <../CC-Configutation/output/output_2-20.png, id=288, 1078.78032pt x 546.54187pt>
 File: ../CC-Configutation/output/output_2-20.png Graphic file (type png)
 <use ../CC-Configutation/output/output_2-20.png>
-Package pdftex.def Info: ../CC-Configutation/output/output_2-20.png  used on input line 634.
+Package pdftex.def Info: ../CC-Configutation/output/output_2-20.png  used on input line 636.
 (pdftex.def)             Requested size: 216.84248pt x 109.85684pt.
 
-Underfull \hbox (badness 3158) in paragraph at lines 637--637
+Underfull \hbox (badness 3158) in paragraph at lines 639--639
 []\OT1/cmr/m/n/10.95 Figure 15: |LT-spice Sim-u-la-tion of CC Out-put Char-ac-ter-is-tics ($\OML/cmm/m/it/10.95 I[]$ \OT1/cmr/m/n/10.95 vs $\OML/cmm/m/it/10.95 V[]$\OT1/cmr/m/n/10.95 ) for $\OML/cmm/m/it/10.95 I[] \OT1/cmr/m/n/10.95 =
  []
 
 [12
 
  <../CC-Configutation/Schematic.png> <../CC-Configutation/input/input_VEC=1.png> <../CC-Configutation/input/input_VEC=5,10.png>]
-Overfull \hbox (15.94052pt too wide) in alignment at lines 676--681
+Overfull \hbox (15.94052pt too wide) in alignment at lines 678--683
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (15.94052pt too wide) in alignment at lines 681--691
+Overfull \hbox (15.94052pt too wide) in alignment at lines 683--693
  [] [] [] [] [] 
  []
 
 [13 <../CC-Configutation/output/output_0-2.png> <../CC-Configutation/output/output_2-20.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 693.
+(hyperref)                removing `math shift' on input line 695.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 693.
+(hyperref)                removing `math shift' on input line 695.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 693.
+(hyperref)                removing `math shift' on input line 695.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 693.
+(hyperref)                removing `math shift' on input line 695.
 
 <../PLOTS/CC_INPUT/VEC=1.png, id=311, 447.92343pt x 272.51813pt>
 File: ../PLOTS/CC_INPUT/VEC=1.png Graphic file (type png)
 <use ../PLOTS/CC_INPUT/VEC=1.png>
-Package pdftex.def Info: ../PLOTS/CC_INPUT/VEC=1.png  used on input line 698.
+Package pdftex.def Info: ../PLOTS/CC_INPUT/VEC=1.png  used on input line 700.
 (pdftex.def)             Requested size: 149.3802pt x 90.8835pt.
 <../PLOTS/CC_INPUT/VEC=5.png, id=312, 450.18187pt x 268.00125pt>
 File: ../PLOTS/CC_INPUT/VEC=5.png Graphic file (type png)
 <use ../PLOTS/CC_INPUT/VEC=5.png>
-Package pdftex.def Info: ../PLOTS/CC_INPUT/VEC=5.png  used on input line 704.
+Package pdftex.def Info: ../PLOTS/CC_INPUT/VEC=5.png  used on input line 706.
 (pdftex.def)             Requested size: 149.3802pt x 88.9273pt.
 <../PLOTS/CC_INPUT/VEC=10.png, id=313, 447.92343pt x 267.24844pt>
 File: ../PLOTS/CC_INPUT/VEC=10.png Graphic file (type png)
 <use ../PLOTS/CC_INPUT/VEC=10.png>
-Package pdftex.def Info: ../PLOTS/CC_INPUT/VEC=10.png  used on input line 710.
+Package pdftex.def Info: ../PLOTS/CC_INPUT/VEC=10.png  used on input line 712.
 (pdftex.def)             Requested size: 149.3802pt x 89.12608pt.
 <../PLOTS/CC_OUTPUT/IB=20u.png, id=314, 505.89pt x 325.215pt>
 File: ../PLOTS/CC_OUTPUT/IB=20u.png Graphic file (type png)
 <use ../PLOTS/CC_OUTPUT/IB=20u.png>
-Package pdftex.def Info: ../PLOTS/CC_OUTPUT/IB=20u.png  used on input line 721.
+Package pdftex.def Info: ../PLOTS/CC_OUTPUT/IB=20u.png  used on input line 723.
 (pdftex.def)             Requested size: 149.3802pt x 96.03188pt.
 <../PLOTS/CC_OUTPUT/IB=60u.png, id=315, 505.89pt x 325.215pt>
 File: ../PLOTS/CC_OUTPUT/IB=60u.png Graphic file (type png)
 <use ../PLOTS/CC_OUTPUT/IB=60u.png>
-Package pdftex.def Info: ../PLOTS/CC_OUTPUT/IB=60u.png  used on input line 727.
+Package pdftex.def Info: ../PLOTS/CC_OUTPUT/IB=60u.png  used on input line 729.
 (pdftex.def)             Requested size: 149.3802pt x 96.03188pt.
 <../PLOTS/CC_OUTPUT/IB=100u.png, id=316, 505.89pt x 325.215pt>
 File: ../PLOTS/CC_OUTPUT/IB=100u.png Graphic file (type png)
 <use ../PLOTS/CC_OUTPUT/IB=100u.png>
-Package pdftex.def Info: ../PLOTS/CC_OUTPUT/IB=100u.png  used on input line 733.
+Package pdftex.def Info: ../PLOTS/CC_OUTPUT/IB=100u.png  used on input line 735.
 (pdftex.def)             Requested size: 149.3802pt x 96.03188pt.
 <../PLOTS/CC_INPUT/combined.png, id=317, 469.755pt x 303.534pt>
 File: ../PLOTS/CC_INPUT/combined.png Graphic file (type png)
 <use ../PLOTS/CC_INPUT/combined.png>
-Package pdftex.def Info: ../PLOTS/CC_INPUT/combined.png  used on input line 744.
+Package pdftex.def Info: ../PLOTS/CC_INPUT/combined.png  used on input line 746.
 (pdftex.def)             Requested size: 231.29816pt x 149.45084pt.
 <../PLOTS/CC_OUTPUT/combined.png, id=318, 469.755pt x 303.534pt>
 File: ../PLOTS/CC_OUTPUT/combined.png Graphic file (type png)
 <use ../PLOTS/CC_OUTPUT/combined.png>
-Package pdftex.def Info: ../PLOTS/CC_OUTPUT/combined.png  used on input line 750.
+Package pdftex.def Info: ../PLOTS/CC_OUTPUT/combined.png  used on input line 752.
 (pdftex.def)             Requested size: 231.29816pt x 149.45084pt.
 [14 <../PLOTS/CC_INPUT/VEC=1.png> <../PLOTS/CC_INPUT/VEC=5.png> <../PLOTS/CC_INPUT/VEC=10.png> <../PLOTS/CC_OUTPUT/IB=20u.png> <../PLOTS/CC_OUTPUT/IB=60u.png> <../PLOTS/CC_OUTPUT/IB=100u.png> <../PLOTS/CC_INPUT/combined.png> <../PLOTS/CC_OUTPUT/combined.png>] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 796--796
+Underfull \hbox (badness 10000) in paragraph at lines 798--798
 []|\OT1/cmr/bx/n/10.95 Common Emit-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 797--797
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
 []|\OT1/cmr/bx/n/10.95 Common Col-lec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--808
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
 []|\OT1/cmr/bx/n/10.95 CE Con-fig-u-ra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--808
+Underfull \hbox (badness 10000) in paragraph at lines 810--810
 []|\OT1/cmr/bx/n/10.95 CB Con-fig-u-ra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--809
+Underfull \hbox (badness 10000) in paragraph at lines 810--811
 []|\OT1/cmr/bx/n/10.95 CC Con-fig-u-ra-
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 810--810
+Underfull \hbox (badness 3240) in paragraph at lines 812--812
 []|\OT1/cmr/bx/n/10.95 Input Re-sis-tance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
 []|\OT1/cmr/bx/n/10.95 Medium
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
 []|\OT1/cmr/bx/n/10.95 Very Low
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 811--811
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
 []|\OT1/cmr/bx/n/10.95 Output Re-sis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 811--811
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
 []|\OT1/cmr/bx/n/10.95 Medium
  []
 
 
-Underfull \hbox (badness 6078) in paragraph at lines 811--811
+Underfull \hbox (badness 6078) in paragraph at lines 813--813
 []|\OT1/cmr/bx/n/10.95 Very High ($\OMS/cmsy/m/n/10.95 ^^Y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 813--814
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
 []|$\OMS/cmsy/m/n/10.95 ^^Y \OT1/cmr/m/n/10.95 1$ \OT1/cmr/bx/n/10.95 (Unity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 814--814
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
 []|\OT1/cmr/bx/n/10.95 0$[]$ (Non-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 814--815
+Underfull \hbox (badness 10000) in paragraph at lines 816--817
 []|\OT1/cmr/bx/n/10.95 0$[]$ (Non-
  []
 
 
-Overfull \hbox (4.79465pt too wide) in paragraph at lines 824--825
+Overfull \hbox (4.79465pt too wide) in paragraph at lines 826--827
 []\OT1/cmr/bx/n/10.95 CC Con-fig-u-ra-tion: \OT1/cmr/m/n/10.95 Mea-sured in-put re-sis-tance $\OML/cmm/m/it/10.95 r[] \OT1/cmr/m/n/10.95 = 108\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 48 
 $, out-put re-sis-tance $\OML/cmm/m/it/10.95 r[] \OT1/cmr/m/n/10.95 = 246\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 48[]
 $,
@@ -904,9 +904,9 @@ Here is how much of TeX's memory you used:
  35284 multiletter control sequences out of 15000+600000
  568429 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,411b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,411b,586s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (16 pages, 2102190 bytes).
+Output written on main.pdf (16 pages, 2102777 bytes).
 PDF statistics:
  428 PDF objects out of 1000 (max. 8388607)
  287 compressed objects within 3 object streams
