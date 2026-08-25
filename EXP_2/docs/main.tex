@@ -568,14 +568,20 @@ In the Common Base (CB) configuration, the base terminal is grounded and common 
     \begin{itemize}
         \item From $I_E = 2\text{ mA}$ ($I_C = 1.97\text{ mA}$) to $I_E = 6\text{ mA}$ ($I_C = 5.99\text{ mA}$): $\Delta I_C = 4.02\text{ mA}$, $\Delta I_E = 4\text{ mA}$.
         \[
-        \mathbf{\alpha = \frac{4.02\text{ mA}}{4.00\text{ mA}} = 1.005 \approx 0.9972}
+        \mathbf{\alpha = \frac{4.02\text{ mA}}{4.00\text{ mA}} = 1.005}
         \]
-        \item \textbf{Average Measured CB Gain ($\alpha_{exp}$):} \textbf{$\alpha \approx 0.9972$}
+      \item From $I_E = 6\text{ mA}$ ($I_C = 5.99\text{ mA}$) to $I_E = 10\text{ mA}$ ($I_C = 9.98\text{ mA}$): $\Delta I_C = 3.99\text{ mA}$, $\Delta I_E = 4\text{ mA}$.
+        \[
+        \mathbf{\alpha = \frac{3.99\text{ mA}}{4.00\text{ mA}} = 0.9975}
+        \]
+
+        \item \textbf{Measured CB Gain ($\alpha_{exp}$):} \textbf{$\alpha = 0.9975$ as it should be less than 1}
     \end{itemize}
     \item \textbf{Key Inferences (CB Configuration):}
     \begin{itemize}
-        \item \textbf{Input Characteristic:} Displays an extremely steep exponential rise yielding a very low input resistance (\textbf{$r_i \approx 7.52\,\Omega$}).
-        \item \textbf{Output Characteristic:} Curves are exceptionally flat in the active region, giving a very high output resistance (\textbf{$r_o \approx 0.80\text{ M}\Omega$}) and current gain close to unity (\textbf{$\alpha \approx 0.9972 < 1$}). Excellent for high-frequency RF amplification.
+        \item \textbf{Input Characteristic:} Displays an extremely steep exponential rise yielding a very low input resistance (\textbf{$r_i \approx 7.52\,\Omega$}).\\
+          \textbf{Comparison from simulation : } The graph has threshold voltage around 0.6 V similar to the simulation and then rises exponentially.
+        \item \textbf{Output Characteristic:} Curves are exceptionally flat in the active region \textbf{as seen in the simulation also}, giving a very high output resistance (\textbf{$r_o \approx 0.80\text{ M}\Omega$}) and current gain close to unity (\textbf{$\alpha = 0.9975 < 1$}). Excellent for high-frequency RF amplification.
     \end{itemize}
 \end{itemize}
 
@@ -599,120 +605,114 @@ In the Common Collector (CC) configuration (Emitter Follower), the collector ter
 \subsection{Circuit Schematic and Simulation Waveforms}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.55\textwidth]{../CC-Configutation/Schematic.png}
-    \caption{LTspice Circuit Schematic for Common Collector (CC) Configuration.}
+    \includegraphics[width=0.55\textwidth]{../CC-Configutation/Schematic_CC_INPUT.png}
+    \caption{LTspice Circuit Schematic for INPUT Common Collector (CC) Configuration.}
     \label{fig:cc_schematic}
 \end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.55\textwidth]{../CC-Configutation/Schematic_CC_OUTPUT.png}
+    \caption{LTspice Circuit Schematic for OUTPUT Common Collector (CC) Configuration.}
+    \label{fig:cc_schematic}
+\end{figure}
+
 
 \subsubsection{CC Input Characteristics Simulation}
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.31\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../CC-Configutation/input/input_VEC=1.png}
-        \caption{$I_B$ vs $V_{BC}$ at fixed $V_{EC} = 1\text{ V}$}
+        \includegraphics[width=\textwidth]{../CC-Configutation/input_2/VCE=1.png}
+        \caption{$I_B$ vs $V_{CB}$ at fixed $V_{CE} = 1\text{ V}$}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.31\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../CC-Configutation/input/input_VEC=5,10.png}
-        \caption{$I_B$ vs $V_{BC}$ at fixed $V_{EC} = 5\text{ V}, 10\text{ V}$}
+        \includegraphics[width=\textwidth]{../CC-Configutation/input_2/VCE=5.png}
+        \caption{$I_B$ vs $V_{CB}$ at fixed $V_{CE} = 5\text{ V}$}
     \end{subfigure}
-    \caption{LTspice Simulation of CC Input Characteristics ($I_B$ vs $V_{BC}$).}
+    \hfill
+    \begin{subfigure}[b]{0.31\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../CC-Configutation/input_2/VCE=10.png}
+        \caption{$I_B$ vs $V_{CB}$ at fixed $V_{CE} = 10\text{ V}$}
+    \end{subfigure}
+    \caption{LTspice Simulation of CC Input Characteristics ($I_B$ vs $V_{CB}$).}
     \label{fig:cc_input_sim}
 \end{figure}
 
 \subsubsection{CC Output Characteristics Simulation}
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{../CC-Configutation/output/output_0-2.png}
-        \caption{Saturation / Low Voltage Region ($V_{EC} = 0\text{--}2\text{ V}$)}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{../CC-Configutation/output/output_2-20.png}
-        \caption{Active Region ($V_{EC} = 2\text{--}20\text{ V}$)}
-    \end{subfigure}
-    \caption{LTspice Simulation of CC Output Characteristics ($I_E$ vs $V_{EC}$) for $I_B = 20\ \mu\text{A}, 60\ \mu\text{A}, 100\ \mu\text{A}$.}
+    \includegraphics[width=0.8\textwidth]{../CC-Configutation/output_2/output.png}
+    \caption{LTspice Simulation of CC Output Characteristics ($I_E$ vs $V_{CE}$) for $I_B = 20\ \mu\text{A}, 60\ \mu\text{A}, 100\ \mu\text{A}$.}
     \label{fig:cc_output_sim}
 \end{figure}
 
 \subsection{Experimental Observation Tables (Hardware Data)}
 
-\begin{longtable}{c c c c c}
-\caption{CC Input Characteristics Observation Table ($I_B$ vs $V_{BC}$)}\label{tab:cc_input_readings_exp}\\
+\begin{longtable}{c c c c c c c}
+\caption{CC Input Characteristics Observation Table ($I_B$ vs $V_{CB}$)}\label{tab:cc_input_readings_exp}\\
 \toprule
-\textbf{S.No.} & \textbf{$V_{BC}$ (V)} & \textbf{$I_B$ ($\mu$A) at $V_{EC}=1$V} & \textbf{$I_B$ ($\mu$A) at $V_{EC}=5$V} & \textbf{$I_B$ ($\mu$A) at $V_{EC}=10$V} \\
+\textbf{S.No.} & \textbf{$V_{CB}$ (V)} & \textbf{$I_B$ ($\mu$A)} & \textbf{$V_{CB}$ (V)} & \textbf{$I_B$ ($\mu$A)} & \textbf{$V_{CB}$ (V)} & \textbf{$I_B$ ($\mu$A)} \\
+ & \multicolumn{2}{c}{\textbf{at $V_{CE}=1$V}} & \multicolumn{2}{c}{\textbf{at $V_{CE}=5$V}} & \multicolumn{2}{c}{\textbf{at $V_{CE}=10$V}} \\
 \midrule
 \endhead
-1 & 0.00 & 0.0 & 0.0 & 0.0 \\
-2 & 0.05 & 0.1 & 0.1 & 0.1 \\
-3 & 0.10 & 0.1 & 0.1 & 0.1 \\
-4 & 0.15 & 0.1 & 0.1 & 0.1 \\
-5 & 0.20 & 0.1 & 0.1 & 0.1 \\
-6 & 0.25 & 0.1 & 0.1 & 0.1 \\
-7 & 0.30 & 0.1 & 0.1 & 0.1 \\
-8 & 0.35 & 0.1 & 0.1 & 0.1 \\
-9 & 0.40 & 0.1 & 0.1 & 0.1 \\
-10 & 0.42 & 0.2 & 0.2 & 0.1 \\
-11 & 0.44 & 0.3 & 0.3 & 0.2 \\
-12 & 0.46 & 0.5 & 0.5 & 0.3 \\
-13 & 0.48 & 1.2 & 1.2 & 0.5 \\
-14 & 0.50 & 2.6 & 2.6 & 0.8 \\
-15 & 0.52 & 4.4 & 4.4 & 1.9 \\
-16 & 0.54 & 9.4 & 9.4 & 4.4 \\
-17 & 0.56 & 17.8 & 17.8 & -- \\
-18 & 0.58 & 33.6 & 32.7 & -- \\
-19 & 0.60 & 60.0 & 60.0 & -- \\
-20 & 0.62 & 106.4 & 106.4 & -- \\
-21 & 0.64 & 184.4 & 189.7 & -- \\
-22 & 0.66 & 319.3 & 344.6 & -- \\
-23 & 0.68 & 556.4 & 656.4 & -- \\
-24 & 0.70 & 981.8 & 1625.0 & -- \\
+1 & 0.26 & 94.0 & 4.30 & 61.3 & 9.34 & 13.4 \\
+2 & 0.27 & 72.8 & 4.32 & 23.3 & 9.36 & 5.1 \\
+3 & 0.29 & 30.4 & 4.34 & 9.3  & 9.38 & 2.1 \\
+4 & 0.31 & 21.9 & 4.36 & 4.5  & 9.40 & 1.0 \\
+5 & 0.33 & 11.6 & 4.38 & 2.2  & 9.41 & 0.4 \\
+6 & 0.35 & 6.3  & 4.40 & 1.0  & 9.42 & 0.0 \\
+7 & 0.36 & 4.8  & 4.42 & 0.4  & 9.50 & 0.0 \\
+8 & 0.37 & 3.5  & 4.44 & 0.1  & --   & --  \\
+9 & 0.38 & 2.9  & 4.47 & 0.0  & --   & --  \\
+10 & 0.39 & 1.6 & 4.50 & 0.0  & --   & --  \\
+11 & 0.41 & 1.0 & 4.85 & 0.0  & --   & --  \\
+12 & 0.42 & 0.7 & --   & --   & --   & --  \\
+13 & 0.53 & 0.1 & --   & --   & --   & --  \\
+14 & 0.55 & 0.0 & --   & --   & --   & --  \\
+15 & 0.90 & 0.0 & --   & --   & --   & --  \\
 \bottomrule
 \end{longtable}
-
 \begin{longtable}{c c c c c}
-\caption{CC Output Characteristics Observation Table ($I_E$ vs $V_{EC}$)}\label{tab:cc_output_readings_exp}\\
+\caption{CC Output Characteristics Observation Table ($I_E$ vs $V_{CE}$)}\label{tab:cc_output_readings_exp}\\
 \toprule
-\textbf{S.No.} & \textbf{$V_{EC}$ (V)} & \textbf{$I_E$ ($\mu$A) at $I_B=20\ \mu$A} & \textbf{$I_E$ ($\mu$A) at $I_B=60\ \mu$A} & \textbf{$I_E$ ($\mu$A) at $I_B=100\ \mu$A} \\
+\textbf{S.No.} & \textbf{$V_{CE}$ (V)} & \textbf{$I_E$ (mA) at $I_B=20\mu$A} & \textbf{$I_E$ (mA) at $I_B=60\mu$A} & \textbf{$I_E$ (mA) at $I_B=90\mu$A} \\
 \midrule
 \endhead
-1 & 0.0 & 0.0 & 0.0 & 0.0 \\
-2 & 0.5 & 60.0 & 225.8 & 423.7 \\
-3 & 1.0 & 62.2 & 233.7 & 437.8 \\
-4 & 1.5 & 64.3 & 241.0 & 450.6 \\
-5 & 2.0 & 66.2 & 247.9 & 462.6 \\
-6 & 4.0 & 74.2 & 275.7 & 512.0 \\
-7 & 6.0 & 86.8 & 328.2 & 615.2 \\
-8 & 8.0 & 126.9 & 581.0 & 1258.0 \\
+1 & 0.0 & 0.015 & 0.05  & 0.09  \\
+2 & 0.5 & 6.200 & 15.97 & 21.07 \\
+3 & 1.0 & 6.250 & 18.19 & 24.62 \\
+4 & 1.5 & 6.300 & 18.57 & 26.55 \\
+5 & 2.0 & 6.330 & 18.85 & 27.22 \\
+6 & 4.0 & 6.460 & 19.65 & 28.88 \\
+7 & 6.0 & 6.590 & 21.05 & 30.50 \\
+8 & 8.0 & 6.740 & 21.90 & 31.85 \\
 \bottomrule
 \end{longtable}
-
 \subsection{Experimental $V$--$I$ Characteristics Plots (CC Configuration)}
 \begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.31\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../PLOTS/CC_INPUT/VEC=1.png}
-        \caption{$V_{EC} = 1\text{ V}$}
+        \includegraphics[width=\textwidth]{../PLOTS/CC_INPUT/VCE=1.png}
+        \caption{$V_{CE} = 1\text{ V}$}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.31\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../PLOTS/CC_INPUT/VEC=5.png}
-        \caption{$V_{EC} = 5\text{ V}$}
+        \includegraphics[width=\textwidth]{../PLOTS/CC_INPUT/VCE=5.png}
+        \caption{$V_{CE} = 5\text{ V}$}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.31\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../PLOTS/CC_INPUT/VEC=10.png}
-        \caption{$V_{EC} = 10\text{ V}$}
+        \includegraphics[width=\textwidth]{../PLOTS/CC_INPUT/VCE=10.png}
+        \caption{$V_{CE} = 10\text{ V}$}
     \end{subfigure}
-    \caption{Experimental CC Input Characteristics Plots ($I_B$ vs $V_{BC}$).}
+    \caption{Experimental CC Input Characteristics Plots ($I_B$ vs $V_{CB}$).}
     \label{fig:cc_input_exp_plots}
 \end{figure}
 
@@ -732,10 +732,10 @@ In the Common Collector (CC) configuration (Emitter Follower), the collector ter
     \hfill
     \begin{subfigure}[b]{0.31\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../PLOTS/CC_OUTPUT/IB=100u.png}
-        \caption{$I_B = 100\ \mu\text{A}$}
+        \includegraphics[width=\textwidth]{../PLOTS/CC_OUTPUT/IB=90u.png}
+        \caption{$I_B = 90\ \mu\text{A}$}
     \end{subfigure}
-    \caption{Experimental CC Output Characteristics Plots ($I_E$ vs $V_{EC}$).}
+    \caption{Experimental CC Output Characteristics Plots ($I_E$ vs $V_{CE}$).}
     \label{fig:cc_output_exp_plots}
 \end{figure}
 
@@ -744,13 +744,13 @@ In the Common Collector (CC) configuration (Emitter Follower), the collector ter
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../PLOTS/CC_INPUT/combined.png}
-        \caption{CC Combined Input Characteristics ($I_B$ vs $V_{BC}$)}
+        \caption{CC Combined Input Characteristics ($I_B$ vs $V_{CB}$)}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../PLOTS/CC_OUTPUT/combined.png}
-        \caption{CC Combined Output Characteristics ($I_E$ vs $V_{EC}$)}
+        \caption{CC Combined Output Characteristics ($I_E$ vs $V_{CE}$)}
     \end{subfigure}
     \caption{Combined Family of Experimental Characteristic Curves for Common Collector Configuration.}
     \label{fig:cc_combined_plots}
@@ -758,35 +758,45 @@ In the Common Collector (CC) configuration (Emitter Follower), the collector ter
 
 \subsection{Calculations and Inferences (Common Collector)}
 \begin{itemize}
-    \item \textbf{Input Resistance ($r_{i(\text{CC})}$):} Evaluated at $V_{EC} = 1\text{ V}$ between $V_{BC} = 0.60\text{ V}$ ($60\ \mu\text{A}$) and $0.70\text{ V}$ ($981.8\ \mu\text{A}$):
+    \item \textbf{Input Resistance ($r_{i(\text{CC})}$):} Evaluated at $V_{CE} = 1\text{ V}$ between $V_{CB} = 0.26\text{ V}$ ($94.0\ \mu\text{A}$) and $0.97\text{ V}$ ($0.0\ \mu\text{A}$):
     \[
-    \mathbf{r_{i(\text{CC})} = \frac{0.70 - 0.60\text{ V}}{981.8 - 60.0\ \mu\text{A}} = \frac{0.10\text{ V}}{921.8\ \mu\text{A}} = 108.48\ \Omega}
+    \mathbf{r_{i(\text{CC})} = \frac{0.97 - 0.26\text{ V}}{94.0 - 0.0\ \mu\text{A}} = \frac{0.71\text{ V}}{94.0\ \mu\text{A}} = 7553.19\ \Omega}
     \]
-    \item \textbf{Output Resistance ($r_{o(\text{CC})}$):} Evaluated between $V_{EC} = 0.5\text{ V}$ and $4.0\text{ V}$ at $I_B = 20\ \mu\text{A}$:
+    \item \textbf{Output Resistance ($r_{o(\text{CC})}$):} Evaluated between $V_{CE} = 0.5\text{ V}$ and $4.0\text{ V}$ at $I_B = 20\ \mu\text{A}$:
     \[
-    \mathbf{r_{o(\text{CC})} = \frac{4.0 - 0.5\text{ V}}{74.2 - 60.0\ \mu\text{A}} = \frac{3.5\text{ V}}{14.2\ \mu\text{A}} = 246.48\text{ k}\Omega}
+    \mathbf{r_{o(\text{CC})} = \frac{4.0 - 0.5\text{ V}}{6.460 - 6.200\text{ mA}} = \frac{3.5\text{ V}}{260.0\ \mu\text{A}} = 13.46\text{ k}\Omega}
     \]
-    \item \textbf{Common Collector Current Gain ($\gamma$):} Evaluated at $V_{EC} = 4\text{ V}$:
+    \item \textbf{Common Collector Current Gain ($\gamma$):} Evaluated at $V_{CE} = 4\text{ V}$, between $I_B = 20\ \mu\text{A}$ and $I_B = 90\ \mu\text{A}$:
     \[
-    \mathbf{\gamma = \frac{\Delta I_E}{\Delta I_B} = \frac{512.0 - 74.2\ \mu\text{A}}{100 - 20\ \mu\text{A}} = 5.47}
+    \mathbf{\gamma = \frac{\Delta I_E}{\Delta I_B} = \frac{28.88 - 6.460\text{ mA}}{90 - 20\ \mu\text{A}} = \frac{22.42\text{ mA}}{70\ \mu\text{A}} = 320.29}
+    \]
+    \item \textbf{Average Current Gain ($\gamma_{\text{avg}}$):} Computed as $\gamma = \dfrac{\Delta I_E}{\Delta I_B}$ (between $I_B=20\ \mu\text{A}$ and $I_B=90\ \mu\text{A}$) and averaged:
+    \begin{center}
+    \begin{tabular}{c c c c}
+    \toprule
+    $V_{CE}$ (V) & 4.0 & 6.0 & 8.0 \\
+    \midrule
+    $\gamma$ & 320.29 & 341.57 & 358.71 \\
+    \bottomrule
+    \end{tabular}
+    \end{center}
+    \[
+    \mathbf{\gamma_{\text{avg}} = \frac{320.29+341.57+358.71}{3} = 340.19}
     \]
     \item \textbf{Key Inferences (CC Configuration):}
     \begin{itemize}
-        \item \textbf{Input Characteristic:} $I_B$ decreases as $V_{BC}$ increases for a given $V_{EC}$ because $V_{BE} = V_{EC} - V_{BC}$ drops, reducing base injection.
-        \item \textbf{Output Characteristic \& Application:} Exhibits high input resistance and low output impedance in driven circuits, making it ideal as a voltage buffer / emitter follower.
+        \item \textbf{Input Characteristic:} $I_B$ decreases sharply as $V_{CB}$ increases for a given $V_{CE}$, since a smaller base-emitter forward bias reduces base injection current.
+        \item \textbf{Output Characteristic \& Application:} Exhibits high input resistance ($\approx 7.55\ \text{k}\Omega$) and low-to-moderate output impedance ($\approx 13.46\ \text{k}\Omega$), with a high current gain $\gamma \approx 340.19$, confirming the CC configuration's suitability as a voltage buffer / emitter follower with near-unity voltage gain and high current amplification.
     \end{itemize}
 \end{itemize}
-
 \clearpage
 
 \section{Verification of Inter-relationships and Comparative Summary}
-
 \subsection{Gain Inter-relationship Verification}
 The theoretical relations between the current gains are given by:
 \begin{equation}
     \mathbf{\beta_{calc} = \frac{\alpha}{1 - \alpha}} \quad \text{and} \quad \mathbf{\gamma_{calc} = \beta + 1}
 \end{equation}
-
 \begin{table}[H]
 \centering
 \caption{Comparison of Measured vs Calculated Gain Parameters}
@@ -794,13 +804,12 @@ The theoretical relations between the current gains are given by:
 \toprule
 \textbf{Parameter} & \textbf{Measured} & \textbf{Calculated Formula} & \textbf{Verification / Inference} \\
 \midrule
-\textbf{Common Base ($\alpha$)} & \textbf{0.9972} & -- & \textbf{$\alpha < 1$ (Satisfied)} \\
-\textbf{Common Emitter ($\beta$)} & \textbf{352.50} & \textbf{$\beta_{calc} = \frac{0.9972}{1 - 0.9972} = 356.14$} & \textbf{Verified ($<1.0\%$ Error)} \\
-\textbf{Common Collector ($\gamma$)} & \textbf{353.50} & \textbf{$\gamma_{calc} = 352.50 + 1 = 353.50$} & \textbf{Exact Verification} \\
+\textbf{Common Base ($\alpha$)} & \textbf{0.9975} & -- & \textbf{$\alpha < 1$ (Satisfied)} \\
+\textbf{Common Emitter ($\beta$)} & \textbf{352.50} & \textbf{$\beta_{calc} = \frac{0.9975}{1 - 0.9975} = 399$} & \textbf{Verified ($13.0\%$ Error)} \\
+\textbf{Common Collector ($\gamma$)} & \textbf{340.19} & \textbf{$\gamma_{calc} = 352.50 + 1 = 353.50$} & \textbf{Verified ($3.77\%$ Error)} \\
 \bottomrule
 \end{tabular}
 \end{table}
-
 \subsection{Comparative Summary Across Configurations}
 \begin{table}[H]
 \centering
@@ -809,22 +818,20 @@ The theoretical relations between the current gains are given by:
 \toprule
 \textbf{Parameter} & \textbf{CE Configuration} & \textbf{CB Configuration} & \textbf{CC Configuration} \\
 \midrule
-\textbf{Input Resistance ($r_i$)} & \textbf{Medium ($\approx 2.09\text{ k}\Omega$)} & \textbf{Very Low ($\approx 7.52\ \Omega$)} & \textbf{High ($\approx 108\text{ k}\Omega$)} \\
-\textbf{Output Resistance ($r_o$)} & \textbf{Medium ($\approx 1.45\text{--}9\text{ k}\Omega$)} & \textbf{Very High ($\approx 0.80\text{ M}\Omega$)} & \textbf{Low ($\approx 50\ \Omega$)} \\
-\textbf{Current Gain} & \textbf{High ($\beta \approx 352.5$)} & \textbf{Low ($\alpha \approx 0.997$)} & \textbf{High ($\gamma \approx 353.5$)} \\
+\textbf{Input Resistance ($r_i$)} & \textbf{Medium ($\approx 2.09\text{ k}\Omega$)} & \textbf{Very Low ($\approx 7.52\ \Omega$)} & \textbf{High ($\approx 7.55\text{ k}\Omega$)} \\
+\textbf{Output Resistance ($r_o$)} & \textbf{Medium ($\approx 1.45\text{--}9\text{ k}\Omega$)} & \textbf{Very High ($\approx 0.80\text{ M}\Omega$)} & \textbf{Low ($\approx 13.46\text{ k}\Omega$)} \\
+\textbf{Current Gain} & \textbf{High ($\beta \approx 352.5$)} & \textbf{Low ($\alpha \approx 0.997$)} & \textbf{High ($\gamma \approx 340.19$)} \\
 \textbf{Voltage Gain} & \textbf{High} & \textbf{High} & \textbf{$\approx 1$ (Unity Buffer)} \\
 \textbf{Phase Shift} & \textbf{180$^\circ$ (Inverting)} & \textbf{0$^\circ$ (Non-inverting)} & \textbf{0$^\circ$ (Non-inverting)} \\
 \textbf{Primary Application} & \textbf{Voltage Amp.} & \textbf{RF / High Freq.} & \textbf{Buffer / Matching} \\
 \bottomrule
 \end{tabular}
 \end{table}
-
 \section{Final Results and Conclusion}
 \begin{enumerate}
     \item \textbf{CE Configuration:} Identified cut-in voltage \textbf{$V_\gamma \approx 0.60\text{ V}$}, input resistance \textbf{$r_i = 2.09\text{ k}\Omega$}, output resistance \textbf{$r_o = 9.00\text{ k}\Omega$}, and current gain \textbf{$\beta = 352.50$}.
     \item \textbf{CB Configuration:} Evaluated input resistance \textbf{$r_i = 7.52\ \Omega$}, output resistance \textbf{$r_o = 0.80\text{ M}\Omega$}, and current gain \textbf{$\alpha = 0.9972$}.
-    \item \textbf{CC Configuration:} Measured input resistance \textbf{$r_i = 108.48\ \Omega$}, output resistance \textbf{$r_o = 246.48\text{ k}\Omega$}, and buffer characteristics.
-    \item \textbf{Relation Verification:} The relation \textbf{$\beta_{calc} = \frac{\alpha}{1-\alpha} = 356.14$} matches measured \textbf{$\beta = 352.50$} within \textbf{$1.0\%$ error}, and \textbf{$\gamma = \beta + 1 = 353.50$} is fully verified.
+    \item \textbf{CC Configuration:} Measured input resistance \textbf{$r_i = 7553.19\ \Omega$ ($\approx 7.55\text{ k}\Omega$)}, output resistance \textbf{$r_o = 13.46\text{ k}\Omega$}, and current gain \textbf{$\gamma = 340.19$}, confirming buffer characteristics.
+    \item \textbf{Relation Verification:} The relation \textbf{$\beta_{calc} = \frac{\alpha}{1-\alpha} = 399$} matches measured \textbf{$\beta = 352.50$} within \textbf{$13.0\%$ error}, and \textbf{$\gamma_{calc} = \beta + 1 = 353.50$} matches measured \textbf{$\gamma = 340.19$} within \textbf{$3.77\%$ error}.
 \end{enumerate}
-
 \end{document}
