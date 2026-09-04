@@ -1,0 +1,14 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\EDC_LAB\EXP_2\CB-Configuration\Draft1.net
+Start Time: Tue Sep  1 15:53:16 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Total elapsed time: 0.139 seconds.
+
+Files loaded:
+C:\EDC_LAB\EXP_2\CB-Configuration\Draft1.net
+C:\Users\Suraj\AppData\Local\LTspice\lib\cmp\standard.mos
+
