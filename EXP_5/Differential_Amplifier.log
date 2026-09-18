@@ -1,0 +1,18 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\EDC_LAB\EXP_5\Differential_Amplifier.net
+Start Time: Fri Sep 18 11:23:20 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Instance "u1:x1:M1": Length shorter than recommended for a level 3 MOSFET.
+Instance "u1:x1:M2": Length shorter than recommended for a level 3 MOSFET.
+Instance "u1:x2:M1": Length shorter than recommended for a level 3 MOSFET.
+Instance "u1:x2:M2": Length shorter than recommended for a level 3 MOSFET.
+Total elapsed time: 0.045 seconds.
+
+Files loaded:
+C:\EDC_LAB\EXP_5\Differential_Amplifier.net
+C:\EDC_LAB\EXP_5\SI9926.txt
+
