@@ -61,7 +61,7 @@
 \begin{enumerate}
     \item To assemble and verify the operation of a two-transistor source-coupled MOSFET differential amplifier utilizing a matched SI9926BDY dual N-channel MOSFET package.
     \item To characterize the individual input ($I_D$ vs. $V_{GS}$) and output ($I_D$ vs. $V_{DS}$) DC characteristics of both transistors ($M_1$ and $M_2$) inside the dual package.
-    \item To establish, verify, and document the DC operating (quiescent) point by adjusting the common-mode gate bias such that a nominal tail bias current $I_{SS} \approx 80\text{ mA}$ is achieved with $V_{DD} = 12\text{ V}$, $R_D = 180\ \Omega$, and $R_{SS} = 22\ \Omega$.
+    \item To establish, verify, and document the DC operating (quiescent) point by adjusting the common-mode gate bias such that a nominal tail bias current $I_{SS} \approx 80\text{ mA}$ is achieved with $V_{DD} = 12\text{ V}$, $R_D = 180\ \Omega$, and $R_{SS} = 22\ \Omega$.\\\textbf{Note:} These values of resistances were chosen based on availability in lab.
     \item To experimentally determine the common-mode transfer characteristics ($V_{D1}, V_{D2}$, and $I_{SS}$ vs. $V_{cm}$) under pure common-mode excitation ($V_{id} = 0$), identifying the Input Common-Mode Range (ICMR) bounded by triode entry and cutoff.
     \item To experimentally measure the large-signal differential-mode transfer characteristics ($V_{D1}, V_{D2}, I_{D1}, I_{D2}$, and $\Delta I_D = I_{D1} - I_{D2}$ vs. $V_{id} = V_{in+} - V_{cm}$) over a symmetric differential input span.
     \item To test the exponential weak-inversion (subthreshold) conduction model on a semi-log scale ($\log |\Delta I_D|$ vs. $V_{id}$), extract the device slope factor $n$, and compare the measured small-signal transconductance $g_m$ and voltage gain $A_d$ against theoretical predictions.
@@ -196,8 +196,6 @@ $V_{GS}$ (V) & $I_D$ (mA) & $V_{GS}$ (V) & $I_D$ (mA) \\ \midrule
 0.56 & 0.020 & 0.60 & 6.320 \\
 0.58 & 0.034 & 0.65 & 6.320 \\
 0.60 & 0.055 & 0.70 & 6.320 \\
-0.61 & 5.690 & --- & --- \\
-0.65 & 5.700 & --- & --- \\
 \bottomrule
 \end{tabular}
 \end{minipage}
@@ -225,15 +223,16 @@ $V_{DS}$ (V) & $I_D$ (A) & $V_{DS}$ (V) & $I_D$ (A) \\ \midrule
 \end{minipage}
 \end{table}
 
-\noindent\textbf{Key Observation on Device Matching:} Transistor $M_1$ turns on sharply around $V_{GS} \approx 0.60\text{--}0.61\text{ V}$, whereas $M_2$ exhibits a lower subthreshold knee around $0.48\text{--}0.49\text{ V}$. This slight physical threshold offset ($\Delta V_{th} \approx 100\text{ mV}$) accounts for the minor quiescent drain voltage imbalance ($V_{D1} \neq V_{D2}$) observed in subsequent sections.
-
 \newpage
+
+\noindent\textbf{Key Observation on Device Matching:} Transistor $M_1$ turns on sharply around \textbf{$V_{GS} \approx 0.60\text{--}0.61\text{ V}$}, whereas $M_2$ exhibits a lower subthreshold knee around \textbf{$0.48\text{--}0.49\text{ V}$}. \textbf{This slight physical threshold offset ($\Delta V_{th} \approx 100\text{ mV}$) accounts for the minor quiescent drain voltage imbalance ($V_{D1} \neq V_{D2}$) observed in subsequent sections}.
+
 \section{Section 7.1: DC Bias-Point Setting and Verification}
 \subsection{Methodology and Quiescent Condition}
 The differential amplifier was wired as shown in Figure \ref{fig:schematic} with $V_{DD} = 12\text{ V}$, $R_D = 180\ \Omega$, and $R_{SS} = 22\ \Omega$. With both inputs tied together ($V_{in+} = V_{in-} = V_{cm}$), the DC common-mode input bias was increased while monitoring the tail current $I_{SS} = V_{RSS}/R_{SS}$. The target bias current was $I_{SS} \approx 80\text{ mA}$.
 \begin{itemize}
     \item \textbf{Quiescent Common-Mode Input:} $V_{cm,Q} = 3.08\text{ V}$
-    \item \textbf{Measured Quiescent Tail Current:} $I_{SS,Q} = 80.1\text{ mA}$ ($V_{RSS} = 1.762\text{ V}$)
+    \item \textbf{Measured Quiescent Tail Current:} $I_{S,Q} = 80.1\text{ mA}$ ($V_{RSS} = 1.762\text{ V}$)
     \item \textbf{Drain Quiescent Voltages:} $V_{D1} = 4.55\text{ V}$, \quad $V_{D2} = 4.66\text{ V}$
     \item \textbf{Quiescent Device Mismatch:} $\Delta V_{D,Q} = |V_{D1} - V_{D2}| = |4.55 - 4.66| = 0.11\text{ V} = 110\text{ mV}$.
 \end{itemize}
@@ -243,7 +242,7 @@ The differential amplifier was wired as shown in Figure \ref{fig:schematic} with
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=\textwidth]{../SIM/7.1/sim_is.png}
-        \caption{LTspice Simulation: $I_{SS}$ vs. $V_{cm}$}
+        \caption{LTspice Simulation: $I_{S}$ vs. $V_{cm}$}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.48\textwidth}
@@ -269,7 +268,7 @@ The differential amplifier was wired as shown in Figure \ref{fig:schematic} with
     \label{fig:bias_vd}
 \end{figure}
 
-\subsection{Experimental Observation Table (Sheet 1)}
+\subsection{Experimental Observation Table}
 \begin{table}[H]
 \centering
 \caption{DC Bias Setting Sweep: $V_{cm}$, Tail Current $I_S$, and Drain Voltages ($V_{DD} = 12\text{ V}, R_D = 180\ \Omega, R_{SS} = 22\ \Omega$)}
@@ -297,7 +296,8 @@ The differential amplifier was wired as shown in Figure \ref{fig:schematic} with
 \end{table}
 
 \noindent\textbf{Inference:} In cutoff ($V_{cm} < 0.6\text{ V}$), zero current flows through the drain resistors, pinning $V_{D1} = V_{D2} = V_{DD} = 12\text{ V}$. Beyond $V_{cm} = 0.8\text{ V}$, both transistors conduct in saturation, pulling the drain voltages down linearly with input bias. At $V_{cm} = 3.08\text{ V}$, the tail current reaches $80.10\text{ mA}$, placing both drain nodes near mid-rail ($\approx 4.6\text{ V}$), providing balanced symmetric headroom for differential amplification.
-
+\\\textbf{At Q-Point : $I_{D1}$ = (12-4.55)/180 = 41.39 mA and $I_{D2}$ = (12-4.66) = 40.78 mA.\\
+$I_{D1} \approx I_{D2}$}.
 \newpage
 \section{Section 7.2: Common-Mode Transfer Characteristics and ICMR}
 \subsection{Circuit Behavior and Boundary Formulation}
@@ -316,7 +316,7 @@ The \textbf{Input Common-Mode Range (ICMR)} is bounded by:
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=\textwidth]{../SIM/7.2/sim_is.png}
-        \caption{LTspice Simulation: $I_{SS}$ vs. $V_{cm}$}
+        \caption{LTspice Simulation: $I_{S}$ vs. $V_{cm}$}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.48\textwidth}
@@ -344,19 +344,27 @@ The \textbf{Input Common-Mode Range (ICMR)} is bounded by:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.48\textwidth]{../SIM/7.2/sim_vss.png}
-    \caption{LTspice Simulation: Common-Source Node Voltage $V_{SS}$ vs. $V_{cm}$.}
-    \label{fig:sim_vss}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{../SIM/7.2/sim_vss.png}
+        \caption{LTspice Simulation: $V_{RSS}$ vs. $V_{cm}$}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{../PLOTS/CM/vss_vs_vcm.png}
+        \caption{Experimental Plot: $V_{RSS}$ vs. $V_{cm}$}
+    \end{subfigure}
+    \caption{Common-Mode Sweep: Common-Source Node / Tail Voltage Comparison ($V_{RSS}$ vs. $V_{cm}$).}
+    \label{fig:cm_vss}
 \end{figure}
 
-\subsection{Experimental Observation Table (Sheet 2)}
+\subsection{Experimental Observation Table}
 \begin{table}[H]
 \centering
-\caption{Common-Mode Sweep Observations: $V_{cm}$, Drain Voltages, Tail Voltage $V_{RSS}$, and $I_{SS}$ ($R_{SS} = 22\ \Omega$)}
+\caption{Common-Mode Sweep Observations: $V_{cm}$, Drain Voltages, Tail Voltage $V_{RSS}$, and $I_{S}$ ($R_{SS} = 22\ \Omega$)}
 \label{tab:sheet2}
 \begin{tabular}{@{}cccccc@{}}
 \toprule
-\textbf{$V_{cm}$ [V]} & \textbf{$V_{D1}$ [V]} & \textbf{$V_{D2}$ [V]} & \textbf{$V_{RSS}$ [V]} & \textbf{$I_{SS} = V_{RSS}/R_{SS}$ [mA]} & \textbf{Region / State} \\ \midrule
+\textbf{$V_{cm}$ [V]} & \textbf{$V_{D1}$ [V]} & \textbf{$V_{D2}$ [V]} & \textbf{$V_{RSS}$ [V]} & \textbf{$I_{S} = V_{RSS}/R_{SS}$ [mA]} & \textbf{Region / State} \\ \midrule
 1.00 & 10.95 & 10.96 & 0.25 & 11.36 & Linear saturation onset \\
 1.50 & 9.12 & 9.10 & 0.70 & 31.82 & Saturated differential pair \\
 2.00 & 7.15 & 7.10 & 1.17 & 53.18 & Saturated differential pair \\
@@ -375,7 +383,7 @@ The \textbf{Input Common-Mode Range (ICMR)} is bounded by:
     \begin{equation}
         A_{cm,2} = \frac{\Delta V_{D2}}{\Delta V_{cm}} = \frac{3.25 - 10.96}{3.0 - 1.0} = \frac{-7.71}{2.0} = -3.855\text{ V/V}
     \end{equation}
-    The measured average common-mode gain $|A_{cm,\text{meas}}| \approx 3.82\text{ V/V}$ is in close agreement with the theoretical value $A_{cm} \approx -\frac{R_D}{2 R_{SS}} = -\frac{180}{44} = -4.091\text{ V/V}$ (relative error of only $6.6\%$).
+    \textbf{The measured average common-mode gain $|A_{cm,\text{meas}}| \approx 3.82\text{ V/V}$ is in close agreement with the theoretical value $A_{cm} \approx -\frac{R_D}{2 R_{SS}} = -\frac{180}{44} = -4.091\text{ V/V}$ (relative error of only $6.6\%$).}
     \item \textbf{Input Common-Mode Range (ICMR):} From the cutoff threshold $V_{cm,\min} \approx 0.8\text{ V}$ to the triode boundary $V_{cm,\max} \approx 3.0\text{ V}$, the amplifier exhibits an ICMR spanning approximately $\mathbf{0.8\text{ V} \le V_{cm} \le 3.0\text{ V}}$ ($\Delta V_{cm} \approx 2.2\text{ V}$).
 \end{enumerate}
 
@@ -388,20 +396,35 @@ With the non-inverting gate $V_{in-}$ held stationary at the quiescent point $V_
 \end{equation}
 where $V_{DD} = 12\text{ V}$ and $R_D = 180\ \Omega$.
 
-\subsection{Side-by-Side Comparison: Simulation vs. Experimental Linear Plot}
+\subsection{Side-by-Side Comparison: Simulation vs. Experimental Plots}
 \begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{../SIM/7.3/sim_vd1_vd2.png}
+        \includegraphics[width=\textwidth]{../SIM/7.3/sim_vd1_vd2_vs_vid.png}
         \caption{LTspice Simulation: $V_{D1}, V_{D2}$ vs. $V_{id}$}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{../SIM/7.3/sim_id1_id2.png}
+        \includegraphics[width=\textwidth]{../PLOTS/DIFF_MODE/vd1_vd2_vs_vid.png}
+        \caption{Experimental Plot: $V_{D1}, V_{D2}$ vs. $V_{id}$}
+    \end{subfigure}
+    \caption{Differential-Mode Sweep: Drain Voltage Comparison ($V_{D1}, V_{D2}$ vs. $V_{id}$).}
+    \label{fig:diff_vd}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{../SIM/7.3/sim_id1_id2_vs_vid.png}
         \caption{LTspice Simulation: $I_{D1}, I_{D2}$ vs. $V_{id}$}
     \end{subfigure}
-    \caption{LTspice Simulation of Differential-Mode Transfer Characteristics.}
-    \label{fig:sim_diff}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{../PLOTS/DIFF_MODE/id1_id2_vs_vid.png}
+        \caption{Experimental Plot: $I_{D1}, I_{D2}$ vs. $V_{id}$}
+    \end{subfigure}
+    \caption{Differential-Mode Sweep: Branch Currents Comparison ($I_{D1}, I_{D2}$ vs. $V_{id}$).}
+    \label{fig:diff_id}
 \end{figure}
 
 \begin{figure}[H]
@@ -427,7 +450,7 @@ where $V_{DD} = 12\text{ V}$ and $R_D = 180\ \Omega$.
     \label{fig:semilog_plot}
 \end{figure}
 
-\subsection{Experimental Observation Table (Sheet 3)}
+\subsection{Experimental Observation Table}
 \begin{table}[H]
 \centering
 \caption{Differential-Mode Transfer Characteristics ($V_2 = 3.08\text{ V}, V_{DD} = 12\text{ V}, R_D = 180\ \Omega$)}
@@ -472,6 +495,7 @@ However, on semi-log axes ($\ln |\Delta I_D|$ vs. $|V_{id}|$), in the exponentia
 \begin{equation}
     \text{Slope } S = \frac{d \ln |\Delta I_D|}{d |V_{id}|} = \frac{1}{2 n V_T} \implies n = \frac{1}{2 S V_T}
 \end{equation}
+At room temperature (T=300K) , $V_{T} = 25.85 mV$.\\
 From the measured data points closest to $V_{id} = 0$ ($|V_{id}| = 30\text{ mV}$ to $60\text{ mV}$):
 \begin{itemize}
     \item \textbf{For $V_{id} > 0$:}
@@ -535,8 +559,6 @@ This extracted value $n_{\text{meas}} = 1.235$ lies comfortably within the expec
 $g_m$ (mA/V) & 2065.8 & 2509.0 & 199.1 \\
 $A_d = g_m R_D$ (V/V) & 371.84 & 451.62 & 35.83 \\
 \midrule
-\multicolumn{2}{l}{\textbf{Percentage Deviation:}} & \multicolumn{2}{c}{$\frac{|g_{m,\text{thy}} - g_{m,\text{meas}}|}{g_{m,\text{thy}}} \times 100\% = \mathbf{92.1\%}$} \\
-\bottomrule
 \end{tabular}
 \end{table}
 
@@ -558,14 +580,6 @@ $A_d = g_m R_D$ (V/V) & 371.84 & 451.62 & 35.83 \\
     \item \textbf{Differential Current Asymmetry:} The differential current saturates at $+8.61\text{ mA}$ for positive $V_{id}$, whereas it reaches $-24.44\text{ mA}$ for negative $V_{id}$. This asymmetry arises because $V_{in-}$ was held stationary at $3.08\text{ V}$ while $V_{in+} = V_1$ was swept. Sweeping $V_1$ modulates the common-source tail node $V_S$ through the low tail resistance ($R_{SS} = 22\ \Omega$), which alters the total tail current $I_{SS}$ dynamically across the sweep rather than maintaining an ideal constant current.
     \item \textbf{Physical Origin of $g_m$ Deviation:} While the ideal weak-inversion formula assumes an infinite tail impedance and an ideal current source ($R_{SS} \to \infty$), the breadboard circuit utilized a passive tail resistor $R_{SS} = 22\ \Omega$. Any differential or common-mode swing experiences substantial local source degeneration ($1 + g_m R_{SS}$ effect) and parasitic lead resistance, which significantly reduces the effective bench transconductance below the idealized un-degenerated exponential formula.
     \item \textbf{Common-Mode Rejection Behavior:} The measured common-mode gain ($|A_{cm}| \approx 3.82\text{ V/V}$) closely tracks the theoretical expectation of $4.09\text{ V/V}$. Because a small resistor ($22\ \Omega$) is used instead of an active current mirror, the CMRR is modest ($18.85\text{ dB}$). In high-performance analog IC design, an active current source with an output impedance of several hundred kilo-ohms is employed, boosting CMRR well past $60\text{ dB}$.
-\end{enumerate}
-
-\section{Safety Precautions Adhered To}
-\begin{enumerate}
-    \item \textbf{Electrostatic Discharge (ESD):} The SI9926BDY TrenchFET is highly sensitive to ESD due to its ultra-thin gate oxide. The breakout board was handled strictly by its edges.
-    \item \textbf{Current Limiting:} The DC bench power supply was set to a rigid current limit of $150\text{ mA}$ prior to powering the circuit, safeguarding the MOSFETs and breadboard wiring against accidental short circuits.
-    \item \textbf{Maximum Voltage Ratings:} At no point during sweeps did $V_{GS}$ exceed $\pm 12\text{ V}$ or $V_{DS}$ exceed $20\text{ V}$, well within the manufacturer's absolute maximum ratings.
-    \item \textbf{Non-Invasive Measurement:} Branch and tail currents were determined exclusively by differential voltmeter measurements across known precision resistors ($R_D$ and $R_{SS}$), preventing burden voltage artifacts introduced by inline ammeters.
 \end{enumerate}
 
 \section{Conclusion}
