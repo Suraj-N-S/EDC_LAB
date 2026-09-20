@@ -124,9 +124,9 @@ where $V_T = \frac{k_B T}{q} \approx 25.85\text{ mV}$ at room temperature ($T = 
 \begin{equation}
     \Delta I_D = I_{SS} \tanh\left(\frac{V_{id}}{2 n V_T}\right)
 \end{equation}
-The small-signal transconductance and differential voltage gain are:
+The differential small-signal transconductance (differential transconductance of the pair) and differential voltage gain are:
 \begin{equation}
-    g_m = \frac{I_{SS}}{n V_T}, \qquad A_d = g_m R_D
+    g_m = \frac{I_{SS}}{2 n V_T}, \qquad A_d = g_m R_D
 \end{equation}
 
 \subsection{Common-Mode Gain and CMRR Formulation}
@@ -523,19 +523,19 @@ This extracted value $n_{\text{meas}} = 1.235$ lies comfortably within the expec
 \begin{enumerate}
     \item \textbf{Planning Estimate ($n = 1.5$, Section 10):}
     \begin{equation}
-        g_{m,\text{plan}} = \frac{I_{SS}}{n V_T} = \frac{80.1\text{ mA}}{1.5 \times 25.85\text{ mV}} = 2065.8\text{ mA/V} = 2.066\text{ A/V}
+        g_{m,\text{plan}} = \frac{I_{SS}}{2 n V_T} = \frac{80.1\text{ mA}}{2 \times 1.5 \times 25.85\text{ mV}} = 1032.9\text{ mA/V} = 1.033\text{ A/V}
     \end{equation}
     With the actual drain load used in the lab ($R_D = 180\ \Omega$):
     \begin{equation}
-        A_{d,\text{plan}} = g_{m,\text{plan}} R_D = 2.066 \times 180 = \mathbf{371.84\text{ V/V}} \quad (51.4\text{ dB})
+        A_{d,\text{plan}} = g_{m,\text{plan}} R_D = 1.033 \times 180 = \mathbf{185.92\text{ V/V}} \quad (45.39\text{ dB})
     \end{equation}
 
     \item \textbf{Theoretical Prediction with Measured $n$ ($n_{\text{meas}} = 1.235$):}
     \begin{equation}
-        g_{m,\text{thy}} = \frac{I_{SS}}{n_{\text{meas}} V_T} = \frac{80.1\text{ mA}}{1.235 \times 25.85\text{ mV}} = \mathbf{2509.0\text{ mA/V}} = 2.509\text{ A/V}
+        g_{m,\text{thy}} = \frac{I_{SS}}{2 n_{\text{meas}} V_T} = \frac{80.1\text{ mA}}{2 \times 1.235 \times 25.85\text{ mV}} = \mathbf{1254.5\text{ mA/V}} = 1.255\text{ A/V}
     \end{equation}
     \begin{equation}
-        A_{d,\text{thy}} = g_{m,\text{thy}} R_D = 2.509 \times 180 = \mathbf{451.62\text{ V/V}} \quad (53.1\text{ dB})
+        A_{d,\text{thy}} = g_{m,\text{thy}} R_D = 1.255 \times 180 = \mathbf{225.81\text{ V/V}} \quad (47.07\text{ dB})
     \end{equation}
 
     \item \textbf{Direct Experimental Extraction from Linear $\Delta I_D$--$V_{id}$ Plot:}
@@ -544,7 +544,7 @@ This extracted value $n_{\text{meas}} = 1.235$ lies comfortably within the expec
         g_{m,\text{meas}} = \left.\frac{\Delta I_D}{\Delta V_{id}}\right|_{V_{id}=0} = \frac{4.778\text{ mA} - (-7.167\text{ mA})}{30\text{ mV} - (-30\text{ mV})} = \frac{11.944\text{ mA}}{60\text{ mV}} = \mathbf{199.1\text{ mA/V}} = 0.1991\text{ A/V}
     \end{equation}
     \begin{equation}
-        A_{d,\text{meas}} = g_{m,\text{meas}} R_D = 0.1991 \times 180 = \mathbf{35.83\text{ V/V}} \quad (31.1\text{ dB})
+        A_{d,\text{meas}} = g_{m,\text{meas}} R_D = 0.1991 \times 180 = \mathbf{35.83\text{ V/V}} \quad (31.09\text{ dB})
     \end{equation}
 \end{enumerate}
 
@@ -556,9 +556,11 @@ This extracted value $n_{\text{meas}} = 1.235$ lies comfortably within the expec
 \begin{tabular}{@{}lccc@{}}
 \toprule
 \textbf{Quantity} & \textbf{Planning Estimate ($n = 1.5$)} & \textbf{Theory with $n_{\text{meas}} = 1.235$} & \textbf{From Measured Slope} \\ \midrule
-$g_m$ (mA/V) & 2065.8 & 2509.0 & 199.1 \\
-$A_d = g_m R_D$ (V/V) & 371.84 & 451.62 & 35.83 \\
+$g_m$ (mA/V) & 1032.9 & 1254.5 & 199.1 \\
+$A_d = g_m R_D$ (V/V) & 185.92 & 225.81 & 35.83 \\
 \midrule
+\multicolumn{2}{l}{\textbf{Percentage Deviation:}} & \multicolumn{2}{c}{$\frac{|g_{m,\text{thy}} - g_{m,\text{meas}}|}{g_{m,\text{thy}}} \times 100\% = \mathbf{84.1\%}$} \\
+\bottomrule
 \end{tabular}
 \end{table} 
 
@@ -576,7 +578,7 @@ $A_d = g_m R_D$ (V/V) & 371.84 & 451.62 & 35.83 \\
 
 \section{Discrepancy Analysis: Theoretical vs. Measured Performance}
 
-As shown in Table 6, there is a significant discrepancy ($\approx 92\%$ reduction) between the theoretical calculations and the measured bench results for both transconductance ($g_m$) and differential voltage gain ($A_d$):
+As shown in Table \ref{tab:diff_pair_comparison}, there is a discrepancy ($\approx 84.1\%$ difference) between the theoretical calculations and the measured bench results for both transconductance ($g_m$) and differential voltage gain ($A_d$):
 
 \begin{table}[h!]
 \centering
@@ -584,28 +586,28 @@ As shown in Table 6, there is a significant discrepancy ($\approx 92\%$ reductio
 \begin{tabular}{lcccc}
 \hline
 \textbf{Parameter} & \textbf{Theoretical ($n_{meas} = 1.235$)} & \textbf{Measured Bench} & \textbf{Deviation / Error} \\ \hline
-Transconductance ($g_m$) & $2509.0\text{ mA/V}$ & $199.1\text{ mA/V}$ & $\approx 92.1\%$ drop \\
-Differential Gain ($A_d$) & $451.62\text{ V/V}$ & $35.83\text{ V/V}$ & $\approx 92.1\%$ drop \\ \hline
+Transconductance ($g_m$) & $1254.5\text{ mA/V}$ & $199.1\text{ mA/V}$ & $\approx 84.1\%$ drop \\
+Differential Gain ($A_d$) & $225.81\text{ V/V}$ & $35.83\text{ V/V}$ & $\approx 84.1\%$ drop \\ \hline
 \end{tabular}
 \label{tab:diff_pair_comparison}
 \end{table}
 
-\textbf{The primary physical causes for this severe degradation are detailed below}:
+\textbf{The primary physical causes for this degradation are detailed below}:
 
-\subsection{Local Source Degeneration via Passive Resistor ($R_{SS}$)}
-The theoretical subthreshold transconductance model,
+\subsection{Local Source Degeneration via Passive Resistor (RSS)}
+The theoretical subthreshold differential transconductance model,
 \begin{equation}
-g_m = \frac{I_{SS}}{n V_T}
+g_m = \frac{I_{SS}}{2 n V_T}
 \end{equation}
 \textbf{assumes an ideal, infinite-impedance constant tail current source ($R_{SS} \to \infty$). However, the practical circuit utilized a passive tail resistor $R_{SS} = 22\,\Omega$.} 
 
-As $V_{in+}$ was swept, the common-source node voltage $V_S$ was not fixed, causing substantial local source degeneration. The effective AC transconductance $g_{m,eff}$ is given by:
+As $V_{in+}$ was swept, the common-source node voltage $V_S$ was not fixed, causing substantial local source degeneration. The effective AC transconductance $g_{m,eff}$ is degraded by degeneration and source resistance:
 \begin{equation}
 g_{m,eff} = \frac{g_m}{1 + g_m R_{SS}}
 \end{equation}
-Substituting $g_m \approx 2509\text{ mA/V}$ and $R_{SS} = 22\,\Omega$:
+Substituting $g_m \approx 1254.5\text{ mA/V} = 1.255\text{ A/V}$ and $R_{SS} = 22\,\Omega$:
 \begin{equation}
-1 + g_m R_{SS} = 1 + (2.509)(22) \approx 56.2
+1 + g_m R_{SS} = 1 + (1.255)(22) \approx 28.6
 \end{equation}
 \textbf{This degeneration factor accounts for the vast majority of the observed gain and transconductance reduction.}
 
