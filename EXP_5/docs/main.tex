@@ -610,7 +610,7 @@ Substituting $g_m \approx 1254.5\text{ mA/V} = 1.255\text{ A/V}$ and $R_{SS} = 2
 1 + g_m R_{SS} = 1 + (1.255)(22) \approx 28.6
 \end{equation}
 \textbf{This degeneration factor accounts for the vast majority of the observed gain and transconductance reduction.}
-
+While Equation~(30) models full single-ended degeneration yielding $g_{m,\text{eff}} = 43.9\text{ mA/V}$, the measured transconductance $g_{m,\text{meas}} = 199.1\text{ mA/V}$ sits between this lower bound and the ideal differential value ($1254.5\text{ mA/V}$). This occurs because holding $V_{\text{in}-}$ fixed while sweeping $V_{\text{in}+}$ introduces a mixed-mode drive, where $Q_2$ provides partial differential feedback through the non-driven side of the pair, thereby mitigating the full degenerating effect of $R_{SS}$.
 \subsection{Tail Current Modulation and Dynamic Asymmetry}
 During the differential input sweep ($V_{id} \in [-300\text{ mV}, +300\text{ mV}]$), $V_{in-}$ ($V_2$) was held static at $3.08\text{ V}$ while $V_{in+}$ ($V_1$) was varied. Because $R_{SS}$ is small ($22\,\Omega$), altering $V_1$ dynamically shifted the common-source voltage $V_S$, modulating the total tail current $I_{SS}$ across the sweep rather than keeping it constant at $80.1\text{ mA}$. This altered the drain current ($I_D$) slopes relative to theoretical expectations.
 

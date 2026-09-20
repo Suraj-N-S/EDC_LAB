@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1789899808.1407 "main.tex" "main.pdf" "main" 1789899810.05134 0
+["pdflatex"] 1789921524.66222 "main.tex" "main.pdf" "main" 1789921526.13706 0
   "../PLOTS/BIAS_SETTING/is_vs_vcm.png" 1789746920.32056 14174 3ace69734aed23c0243d23e5af5908a9 ""
   "../PLOTS/BIAS_SETTING/vd1_vd2_vs_vcm.png" 1789746920.32056 16408 2d4efc2a37a529a881be0880f7dcf900 ""
   "../PLOTS/CHARACTERISTICS/INPUT/v1.png" 1789746920.32141 10232 a567d72ab1ced15fce57b678657d870c ""
@@ -60,6 +60,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -136,9 +137,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1754046869.959 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1754046937 8213830 9d309a9d0c002d5932800cb3e2d3a0df ""
-  "main.aux" 1789899809.94172 11570 54f5ece860cd4de9a4c58a6caf59c500 "pdflatex"
-  "main.out" 1789899809.94272 8768 ec0bab7dabe86a459cd417c9949f6778 "pdflatex"
-  "main.tex" 1789899062.3442 36522 a0cf4a9c3c4dac593c5efb41f21cddf6 ""
+  "main.aux" 1789921526.08598 11565 a95f373538ac85dcdc6e47dd810b0c8d "pdflatex"
+  "main.out" 1789921526.08698 8768 ec0bab7dabe86a459cd417c9949f6778 "pdflatex"
+  "main.tex" 1789921523.41499 37402 d683cc873fa08db8618d332c33526c58 ""
   (generated)
   "main.aux"
   "main.log"
