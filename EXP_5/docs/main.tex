@@ -429,23 +429,23 @@ where $V_{DD} = 12\text{ V}$ and $R_D = 180\ \Omega$.
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{../PLOTS/DIFF_MODE/del_id_vs_vid_linear.png}
-        \caption{Experimental Linear Plot: $\Delta I_D$ vs. $V_{id}$}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{../PLOTS/DIFF_MODE/del_id_vs_vid_tanh_overlay.png}
-        \caption{Theoretical Overlay: Measured vs. $\tanh$ Model}
-    \end{subfigure}
-    \caption{Differential Transfer Characteristics: Experimental Measurement and Theoretical Comparison.}
+    \includegraphics[width=\textwidth]{../PLOTS/DIFF_MODE/del_id_vs_vid_linear.png}
+    \caption{Experimental Linear Plot: $\Delta I_D$ vs. $V_{id}$}
     \label{fig:diff_plots}
 \end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{../PLOTS/DIFF_MODE/del_id_vs_vid_tanh_overlay.png}
+    \caption{Theoretical Overlay: Measured vs. $\tanh$ Model}
+    \label{fig:theoretical_overlay}
+\end{figure}
+
 
 \subsection{Semi-Log Plot: Weak-Inversion Exponential Conduction Model}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\textwidth]{../PLOTS/DIFF_MODE/abs_del_id_vs_vid_semilog.png}
+    \includegraphics[width=0.9\textwidth]{../PLOTS/DIFF_MODE/abs_del_id_vs_vid_semilog.png}
     \caption{Semi-Log Plot of $|\Delta I_D|$ vs. $|V_{id}|$ for $V_{id} > 0$ and $V_{id} < 0$ (Testing Subthreshold Exponential Law).}
     \label{fig:semilog_plot}
 \end{figure}
