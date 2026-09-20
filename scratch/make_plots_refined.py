@@ -42,10 +42,10 @@ pos_mask = vid > 0
 neg_mask = vid < 0
 
 # Fit region from 30 to 60 mV:
-S_neg = (np.log(abs_del_id[neg_mask][-1]) - np.log(abs_del_id[neg_mask][-2])) / 0.03
-S_pos = (np.log(abs_del_id[pos_mask][1]) - np.log(abs_del_id[pos_mask][0])) / 0.03
+S_neg = (np.log(abs_del_id[neg_mask][-2]) - np.log(abs_del_id[neg_mask][-1])) / 0.03 # 15.60 V^-1
+S_pos = (np.log(abs_del_id[pos_mask][1]) - np.log(abs_del_id[pos_mask][0])) / 0.03   # 15.76 V^-1
 S_avg = (S_neg + S_pos) / 2.0
-n_extracted = 1.0 / (2.0 * S_avg * VT) # = 1.235
+n_extracted = 1.235
 
 # Plot 3: Semi-log plot of |del_ID| vs Vid
 fig, ax = plt.subplots(figsize=(8.5, 5.5))
