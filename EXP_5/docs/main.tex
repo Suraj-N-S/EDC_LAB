@@ -560,7 +560,7 @@ $g_m$ (mA/V) & 2065.8 & 2509.0 & 199.1 \\
 $A_d = g_m R_D$ (V/V) & 371.84 & 451.62 & 35.83 \\
 \midrule
 \end{tabular}
-\end{table}
+\end{table} 
 
 \subsection{Tail Resistance, Common-Mode Gain, and CMRR}
 \begin{itemize}
@@ -572,7 +572,49 @@ $A_d = g_m R_D$ (V/V) & 371.84 & 451.62 & 35.83 \\
     \begin{equation}
         \text{CMRR} = \left|\frac{A_{d,\text{meas}}}{A_{cm}}\right| = \frac{35.83}{4.091} = \mathbf{8.76} \implies \text{CMRR}_{\text{dB}} = 20 \log_{10}(8.76) = \mathbf{18.85\text{ dB}}
     \end{equation}
-\end{itemize}
+\end{itemize} 
+
+\section{Discrepancy Analysis: Theoretical vs. Measured Performance}
+
+As shown in Table 6, there is a significant discrepancy ($\approx 92\%$ reduction) between the theoretical calculations and the measured bench results for both transconductance ($g_m$) and differential voltage gain ($A_d$):
+
+\begin{table}[h!]
+\centering
+\caption{Comparison of Theoretical and Measured Differential Pair Parameters}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Parameter} & \textbf{Theoretical ($n_{meas} = 1.235$)} & \textbf{Measured Bench} & \textbf{Deviation / Error} \\ \hline
+Transconductance ($g_m$) & $2509.0\text{ mA/V}$ & $199.1\text{ mA/V}$ & $\approx 92.1\%$ drop \\
+Differential Gain ($A_d$) & $451.62\text{ V/V}$ & $35.83\text{ V/V}$ & $\approx 92.1\%$ drop \\ \hline
+\end{tabular}
+\label{tab:diff_pair_comparison}
+\end{table}
+
+\textbf{The primary physical causes for this severe degradation are detailed below}:
+
+\subsection{Local Source Degeneration via Passive Resistor ($R_{SS}$)}
+The theoretical subthreshold transconductance model,
+\begin{equation}
+g_m = \frac{I_{SS}}{n V_T}
+\end{equation}
+\textbf{assumes an ideal, infinite-impedance constant tail current source ($R_{SS} \to \infty$). However, the practical circuit utilized a passive tail resistor $R_{SS} = 22\,\Omega$.} 
+
+As $V_{in+}$ was swept, the common-source node voltage $V_S$ was not fixed, causing substantial local source degeneration. The effective AC transconductance $g_{m,eff}$ is given by:
+\begin{equation}
+g_{m,eff} = \frac{g_m}{1 + g_m R_{SS}}
+\end{equation}
+Substituting $g_m \approx 2509\text{ mA/V}$ and $R_{SS} = 22\,\Omega$:
+\begin{equation}
+1 + g_m R_{SS} = 1 + (2.509)(22) \approx 56.2
+\end{equation}
+\textbf{This degeneration factor accounts for the vast majority of the observed gain and transconductance reduction.}
+
+\subsection{Tail Current Modulation and Dynamic Asymmetry}
+During the differential input sweep ($V_{id} \in [-300\text{ mV}, +300\text{ mV}]$), $V_{in-}$ ($V_2$) was held static at $3.08\text{ V}$ while $V_{in+}$ ($V_1$) was varied. Because $R_{SS}$ is small ($22\,\Omega$), altering $V_1$ dynamically shifted the common-source voltage $V_S$, modulating the total tail current $I_{SS}$ across the sweep rather than keeping it constant at $80.1\text{ mA}$. This altered the drain current ($I_D$) slopes relative to theoretical expectations.
+
+\subsection{Moderate Inversion Transition and Parasitics}
+At $I_{SS} \approx 80.1\text{ mA}$, the transistors operate near the border of moderate inversion. In this region, the exponential current-voltage relation degrades toward a square-law/linear characteristics, lowering the effective $g_m$. Furthermore, parasitic resistance from breadboard contacts, probe interconnects, and internal MOSFET source resistances contributed additional unintended degeneration.
+
 
 \section{Observations and Inferences}
 \begin{enumerate}

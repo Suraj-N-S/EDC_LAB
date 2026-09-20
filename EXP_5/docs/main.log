@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  20 SEP 2026 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  20 SEP 2026 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -484,29 +484,29 @@ Overfull \hbox (38.5151pt too wide) in paragraph at lines 75--87
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<../Schematic.png, id=131, 949.29657pt x 497.60907pt>
+<../Schematic.png, id=147, 949.29657pt x 497.60907pt>
 File: ../Schematic.png Graphic file (type png)
 <use ../Schematic.png>
 Package pdftex.def Info: ../Schematic.png  used on input line 98.
 (pdftex.def)             Requested size: 366.82715pt x 192.28242pt.
  [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <../Schematic.png>]
-<../PLOTS/CHARACTERISTICS/INPUT/v1.png, id=142, 453.19313pt x 270.25969pt>
+<../PLOTS/CHARACTERISTICS/INPUT/v1.png, id=158, 453.19313pt x 270.25969pt>
 File: ../PLOTS/CHARACTERISTICS/INPUT/v1.png Graphic file (type png)
 <use ../PLOTS/CHARACTERISTICS/INPUT/v1.png>
 Package pdftex.def Info: ../PLOTS/CHARACTERISTICS/INPUT/v1.png  used on input line 152.
 (pdftex.def)             Requested size: 234.76729pt x 139.99974pt.
-<../PLOTS/CHARACTERISTICS/INPUT/v2.png, id=143, 451.6875pt x 270.25969pt>
+<../PLOTS/CHARACTERISTICS/INPUT/v2.png, id=159, 451.6875pt x 270.25969pt>
 File: ../PLOTS/CHARACTERISTICS/INPUT/v2.png Graphic file (type png)
 <use ../PLOTS/CHARACTERISTICS/INPUT/v2.png>
 Package pdftex.def Info: ../PLOTS/CHARACTERISTICS/INPUT/v2.png  used on input line 157.
 (pdftex.def)             Requested size: 234.76729pt x 140.46985pt.
  [3]
-<../PLOTS/CHARACTERISTICS/OUTPUT/v1.png, id=159, 452.4403pt x 267.24844pt>
+<../PLOTS/CHARACTERISTICS/OUTPUT/v1.png, id=175, 452.4403pt x 267.24844pt>
 File: ../PLOTS/CHARACTERISTICS/OUTPUT/v1.png Graphic file (type png)
 <use ../PLOTS/CHARACTERISTICS/OUTPUT/v1.png>
 Package pdftex.def Info: ../PLOTS/CHARACTERISTICS/OUTPUT/v1.png  used on input line 167.
 (pdftex.def)             Requested size: 234.76729pt x 138.6723pt.
-<../PLOTS/CHARACTERISTICS/OUTPUT/v2.png, id=160, 446.41782pt x 267.24844pt>
+<../PLOTS/CHARACTERISTICS/OUTPUT/v2.png, id=176, 446.41782pt x 267.24844pt>
 File: ../PLOTS/CHARACTERISTICS/OUTPUT/v2.png Graphic file (type png)
 <use ../PLOTS/CHARACTERISTICS/OUTPUT/v2.png>
 Package pdftex.def Info: ../PLOTS/CHARACTERISTICS/OUTPUT/v2.png  used on input line 172.
@@ -522,53 +522,53 @@ Overfull \hbox (25.92876pt too wide) in paragraph at lines 205--223
  []
 
 [4 <../PLOTS/CHARACTERISTICS/INPUT/v1.png> <../PLOTS/CHARACTERISTICS/INPUT/v2.png> <../PLOTS/CHARACTERISTICS/OUTPUT/v1.png> <../PLOTS/CHARACTERISTICS/OUTPUT/v2.png>]
-<../SIM/7.1/sim_is.png, id=174, 1444.64719pt x 645.16031pt>
+<../SIM/7.1/sim_is.png, id=191, 1444.64719pt x 645.16031pt>
 File: ../SIM/7.1/sim_is.png Graphic file (type png)
 <use ../SIM/7.1/sim_is.png>
 Package pdftex.def Info: ../SIM/7.1/sim_is.png  used on input line 244.
 (pdftex.def)             Requested size: 234.76729pt x 104.84222pt.
-<../PLOTS/BIAS_SETTING/is_vs_vcm.png, id=175, 445.665pt x 272.51813pt>
+<../PLOTS/BIAS_SETTING/is_vs_vcm.png, id=192, 445.665pt x 272.51813pt>
 File: ../PLOTS/BIAS_SETTING/is_vs_vcm.png Graphic file (type png)
 <use ../PLOTS/BIAS_SETTING/is_vs_vcm.png>
 Package pdftex.def Info: ../PLOTS/BIAS_SETTING/is_vs_vcm.png  used on input line 249.
 (pdftex.def)             Requested size: 234.76729pt x 143.55652pt.
-<../SIM/7.1/sim_vd1_vd2.png, id=176, 1443.89438pt x 641.39626pt>
+<../SIM/7.1/sim_vd1_vd2.png, id=193, 1443.89438pt x 641.39626pt>
 File: ../SIM/7.1/sim_vd1_vd2.png Graphic file (type png)
 <use ../SIM/7.1/sim_vd1_vd2.png>
 Package pdftex.def Info: ../SIM/7.1/sim_vd1_vd2.png  used on input line 259.
 (pdftex.def)             Requested size: 234.76729pt x 104.27948pt.
-<../PLOTS/BIAS_SETTING/vd1_vd2_vs_vcm.png, id=177, 448.67625pt x 273.27094pt>
+<../PLOTS/BIAS_SETTING/vd1_vd2_vs_vcm.png, id=194, 448.67625pt x 273.27094pt>
 File: ../PLOTS/BIAS_SETTING/vd1_vd2_vs_vcm.png Graphic file (type png)
 <use ../PLOTS/BIAS_SETTING/vd1_vd2_vs_vcm.png>
 Package pdftex.def Info: ../PLOTS/BIAS_SETTING/vd1_vd2_vs_vcm.png  used on input line 264.
 (pdftex.def)             Requested size: 234.76729pt x 142.98569pt.
  [5 <../SIM/7.1/sim_is.png> <../PLOTS/BIAS_SETTING/is_vs_vcm.png> <../SIM/7.1/sim_vd1_vd2.png> <../PLOTS/BIAS_SETTING/vd1_vd2_vs_vcm.png>] [6]
-<../SIM/7.2/sim_is.png, id=195, 1444.64719pt x 639.89063pt>
+<../SIM/7.2/sim_is.png, id=211, 1444.64719pt x 639.89063pt>
 File: ../SIM/7.2/sim_is.png Graphic file (type png)
 <use ../SIM/7.2/sim_is.png>
 Package pdftex.def Info: ../SIM/7.2/sim_is.png  used on input line 318.
 (pdftex.def)             Requested size: 234.76729pt x 103.98587pt.
-<../PLOTS/CM/is_vs_vcm.png, id=196, 451.6875pt x 268.00125pt>
+<../PLOTS/CM/is_vs_vcm.png, id=212, 451.6875pt x 268.00125pt>
 File: ../PLOTS/CM/is_vs_vcm.png Graphic file (type png)
 <use ../PLOTS/CM/is_vs_vcm.png>
 Package pdftex.def Info: ../PLOTS/CM/is_vs_vcm.png  used on input line 323.
 (pdftex.def)             Requested size: 234.76729pt x 139.296pt.
-<../SIM/7.2/sim_vd1_vd2.png, id=197, 1442.38875pt x 637.63219pt>
+<../SIM/7.2/sim_vd1_vd2.png, id=213, 1442.38875pt x 637.63219pt>
 File: ../SIM/7.2/sim_vd1_vd2.png Graphic file (type png)
 <use ../SIM/7.2/sim_vd1_vd2.png>
 Package pdftex.def Info: ../SIM/7.2/sim_vd1_vd2.png  used on input line 333.
 (pdftex.def)             Requested size: 234.76729pt x 103.77454pt.
-<../PLOTS/CM/vd1_vd2_vs_vcm.png, id=198, 450.18187pt x 267.24844pt>
+<../PLOTS/CM/vd1_vd2_vs_vcm.png, id=214, 450.18187pt x 267.24844pt>
 File: ../PLOTS/CM/vd1_vd2_vs_vcm.png Graphic file (type png)
 <use ../PLOTS/CM/vd1_vd2_vs_vcm.png>
 Package pdftex.def Info: ../PLOTS/CM/vd1_vd2_vs_vcm.png  used on input line 338.
 (pdftex.def)             Requested size: 234.76729pt x 139.36961pt.
-<../SIM/7.2/sim_vss.png, id=199, 1440.88312pt x 639.13782pt>
+<../SIM/7.2/sim_vss.png, id=215, 1440.88312pt x 639.13782pt>
 File: ../SIM/7.2/sim_vss.png Graphic file (type png)
 <use ../SIM/7.2/sim_vss.png>
 Package pdftex.def Info: ../SIM/7.2/sim_vss.png  used on input line 348.
 (pdftex.def)             Requested size: 234.76729pt x 104.1366pt.
-<../PLOTS/CM/vss_vs_vcm.png, id=200, 454.69875pt x 272.51813pt>
+<../PLOTS/CM/vss_vs_vcm.png, id=216, 454.69875pt x 272.51813pt>
 File: ../PLOTS/CM/vss_vs_vcm.png Graphic file (type png)
 <use ../PLOTS/CM/vss_vs_vcm.png>
 Package pdftex.def Info: ../PLOTS/CM/vss_vs_vcm.png  used on input line 353.
@@ -579,38 +579,38 @@ Overfull \hbox (1.12825pt too wide) in paragraph at lines 365--375
  []
 
 [8 <../SIM/7.2/sim_vss.png> <../PLOTS/CM/vss_vs_vcm.png>]
-<../SIM/7.3/sim_vd1_vd2_vs_vid.png, id=228, 1441.63594pt x 643.6547pt>
+<../SIM/7.3/sim_vd1_vd2_vs_vid.png, id=244, 1441.63594pt x 643.6547pt>
 File: ../SIM/7.3/sim_vd1_vd2_vs_vid.png Graphic file (type png)
 <use ../SIM/7.3/sim_vd1_vd2_vs_vid.png>
 Package pdftex.def Info: ../SIM/7.3/sim_vd1_vd2_vs_vid.png  used on input line 403.
 (pdftex.def)             Requested size: 234.76729pt x 104.81363pt.
-<../PLOTS/DIFF_MODE/vd1_vd2_vs_vid.png, id=229, 450.18187pt x 270.25969pt>
+<../PLOTS/DIFF_MODE/vd1_vd2_vs_vid.png, id=245, 450.18187pt x 270.25969pt>
 File: ../PLOTS/DIFF_MODE/vd1_vd2_vs_vid.png Graphic file (type png)
 <use ../PLOTS/DIFF_MODE/vd1_vd2_vs_vid.png>
 Package pdftex.def Info: ../PLOTS/DIFF_MODE/vd1_vd2_vs_vid.png  used on input line 408.
 (pdftex.def)             Requested size: 234.76729pt x 140.93997pt.
-<../SIM/7.3/sim_id1_id2_vs_vid.png, id=230, 1441.63594pt x 642.90187pt>
+<../SIM/7.3/sim_id1_id2_vs_vid.png, id=246, 1441.63594pt x 642.90187pt>
 File: ../SIM/7.3/sim_id1_id2_vs_vid.png Graphic file (type png)
 <use ../SIM/7.3/sim_id1_id2_vs_vid.png>
 Package pdftex.def Info: ../SIM/7.3/sim_id1_id2_vs_vid.png  used on input line 418.
 (pdftex.def)             Requested size: 234.76729pt x 104.69102pt.
-<../PLOTS/DIFF_MODE/id1_id2_vs_vid.png, id=231, 458.46281pt x 271.0125pt>
+<../PLOTS/DIFF_MODE/id1_id2_vs_vid.png, id=247, 458.46281pt x 271.0125pt>
 File: ../PLOTS/DIFF_MODE/id1_id2_vs_vid.png Graphic file (type png)
 <use ../PLOTS/DIFF_MODE/id1_id2_vs_vid.png>
 Package pdftex.def Info: ../PLOTS/DIFF_MODE/id1_id2_vs_vid.png  used on input line 423.
 (pdftex.def)             Requested size: 234.76729pt x 138.78107pt.
-<../PLOTS/DIFF_MODE/del_id_vs_vid_linear.png, id=232, 450.18187pt x 271.76532pt>
+<../PLOTS/DIFF_MODE/del_id_vs_vid_linear.png, id=248, 450.18187pt x 271.76532pt>
 File: ../PLOTS/DIFF_MODE/del_id_vs_vid_linear.png Graphic file (type png)
 <use ../PLOTS/DIFF_MODE/del_id_vs_vid_linear.png>
 Package pdftex.def Info: ../PLOTS/DIFF_MODE/del_id_vs_vid_linear.png  used on input line 432.
 (pdftex.def)             Requested size: 489.10287pt x 295.277pt.
  [9 <../SIM/7.3/sim_vd1_vd2_vs_vid.png> <../PLOTS/DIFF_MODE/vd1_vd2_vs_vid.png> <../SIM/7.3/sim_id1_id2_vs_vid.png> <../PLOTS/DIFF_MODE/id1_id2_vs_vid.png>]
-<../PLOTS/DIFF_MODE/del_id_vs_vid_tanh_overlay.png, id=244, 650.43pt x 397.485pt>
+<../PLOTS/DIFF_MODE/del_id_vs_vid_tanh_overlay.png, id=260, 650.43pt x 397.485pt>
 File: ../PLOTS/DIFF_MODE/del_id_vs_vid_tanh_overlay.png Graphic file (type png)
 <use ../PLOTS/DIFF_MODE/del_id_vs_vid_tanh_overlay.png>
 Package pdftex.def Info: ../PLOTS/DIFF_MODE/del_id_vs_vid_tanh_overlay.png  used on input line 439.
 (pdftex.def)             Requested size: 489.10287pt x 298.90147pt.
-<../PLOTS/DIFF_MODE/abs_del_id_vs_vid_semilog.png, id=245, 614.295pt x 397.485pt>
+<../PLOTS/DIFF_MODE/abs_del_id_vs_vid_semilog.png, id=261, 614.295pt x 397.485pt>
 File: ../PLOTS/DIFF_MODE/abs_del_id_vs_vid_semilog.png Graphic file (type png)
 <use ../PLOTS/DIFF_MODE/abs_del_id_vs_vid_semilog.png>
 Package pdftex.def Info: ../PLOTS/DIFF_MODE/abs_del_id_vs_vid_semilog.png  used on input line 448.
@@ -620,27 +620,44 @@ Overfull \hbox (50.54526pt too wide) in paragraph at lines 556--563
  [][] 
  []
 
-[12] [13] [14] (./main.aux)
+[12]
+Overfull \hbox (3.50781pt too wide) in paragraph at lines 584--591
+ [][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 595.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 595.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 595.
+
+[13] [14] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 85B8C9FFC54557FA63191BFB47E18BED;7488.
+(rerunfilecheck)             Checksum: EC0BAB7DABE86A459CD417C9949F6778;8768.
  ) 
 Here is how much of TeX's memory you used:
- 13096 strings out of 474222
- 206488 string characters out of 5748734
+ 13109 strings out of 474222
+ 206681 string characters out of 5748734
  1943975 words of memory out of 5000000
- 35084 multiletter control sequences out of 15000+600000
+ 35089 multiletter control sequences out of 15000+600000
  568429 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,14n,79p,977b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (14 pages, 837481 bytes).
+Output written on main.pdf (14 pages, 841697 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 291 compressed objects within 3 object streams
- 107 named destinations out of 1000 (max. 500000)
- 327 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 406 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 
