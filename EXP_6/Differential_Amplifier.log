@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: C:\EDC_LAB\EXP_6\Differential_Amplifier.net
-Start Time: Thu Sep 24 15:27:54 2026
+Start Time: Fri Oct  2 12:10:04 2026
 solver = Normal
 Maximum thread count: 8
 tnom = 27
@@ -18,9 +18,9 @@ Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.240 seconds.
+Total elapsed time: 0.342 seconds.
 
 Files loaded:
 C:\EDC_LAB\EXP_6\Differential_Amplifier.net
-C:\EDC_LAB\EXP_5\SI9926.txt
+C:\EDC_LAB\EXP_6\SI9926.txt
 
