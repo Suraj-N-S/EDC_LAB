@@ -1,0 +1,38 @@
+*March 20, 2006
+*Doc. ID: 76745, S-60410, Rev. B
+*File Name: Si9926BDY_PS.txt and Si9926BDY_PS.lib
+*This document is intended as a SPICE modeling guideline and does not
+*constitute a commercial product data sheet.  Designers should refer to the
+*appropriate data sheet of the same number for guaranteed specification
+*limits.
+.SUBCKT Si9926BDY 4 1 2
+M1  3 1 2 2 NMOS W=1184119u L=0.25u 
+M2  2 1 2 4 PMOS W=1184119u L=0.40u
+R1  4 3     RTEMP 6E-3
+CGS 1 2     760E-12
+DBD 2 4     DBD
+*************************************************************** 
+.MODEL  NMOS       NMOS ( LEVEL  = 3           TOX    = 3E-8
++ RS     = 4.6E-3         RD     = 0           NSUB   = 2.45E17 
++ KP     = 1.74E-5        UO     = 650             
++ VMAX   = 0              XJ     = 5E-7        KAPPA  = 2E-2
++ ETA    = 1E-4           TPG    = 1  
++ IS     = 0              LD     = 0               
++ CGSO   = 0              CGDO   = 0           CGBO   = 0 
++ NFS    = 0.8E12         DELTA  = 0.1)
+**************************************************************** 
+.MODEL  PMOS       PMOS ( LEVEL  = 3           TOX    = 3E-8
++NSUB    = 1.2E17         TPG    = -1)   
+**************************************************************** 
+.MODEL DBD D (CJO=450E-12 VJ=0.38 M=0.26
++RS=0.1 FC=0.5 IS=1E-12 TT=5E-8 N=1 BV=21)
+**************************************************************** 
+.MODEL RTEMP RES (TC1=7E-3 TC2=5.5E-6)
+**************************************************************** 
+.ENDS
+.subckt SI9926BDY_8PIN 1 2 3 4 5 6 7 8
+X1 7 2 1 Si9926BDY
+X2 5 4 3 Si9926BDY
+R1 7 8 0.001
+R2 5 6 0.001
+.ends SI9926BDY_8PIN
