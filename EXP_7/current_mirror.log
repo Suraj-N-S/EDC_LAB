@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: C:\EDC_LAB\EXP_7\current_mirror.net
-Start Time: Tue Sep 29 16:51:41 2026
+Start Time: Sun Oct 11 16:00:40 2026
 solver = Normal
 Maximum thread count: 8
 tnom = 27
@@ -18,7 +18,7 @@ Instance "u2:x1:M2": Length shorter than recommended for a level 3 MOSFET.
 Instance "u2:x2:M1": Length shorter than recommended for a level 3 MOSFET.
 Instance "u2:x2:M2": Length shorter than recommended for a level 3 MOSFET.
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.488 seconds.
+Total elapsed time: 0.219 seconds.
 
 Files loaded:
 C:\EDC_LAB\EXP_7\current_mirror.net
