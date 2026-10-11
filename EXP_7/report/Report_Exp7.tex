@@ -209,7 +209,6 @@ Unloaded ($\infty$) & 192.0 & 1.0000 & --- \\
 22  & 188.0 & 0.9792 & 0.468 \\
 47  & 190.0 & 0.9896 & 0.495 \\
 56  & 188.0 & 0.9792 & 1.191 \\
-82  & 192.0 & 1.0000 & $< 0.1$ \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -277,13 +276,14 @@ The experimental output resistance is on the order of fractions of an ohm, close
 \toprule
 \textbf{Quantity} & \textbf{Predicted} & \textbf{Measured} & \textbf{\% Deviation} \\
 \midrule
-DC slope $\Delta V_{out}/\Delta V_{in}$ & 1.00 & 0.98 & -2.0\% \\
-Level shift $V_{in} - V_{out}$ (V) & 1.09 V & 0.85 V & -22.0\% \\
+DC slope $\Delta V_{out}/\Delta V_{in}$ & 1.00 & 0.98 & 2.0\% \\
+Level shift $V_{in} - V_{out}$ (V) & 1.09 V & 0.85 V & 22.0\% \\
 Small-signal $A_v$ & $\approx$ 1.00 & 1.035 & +3.5\% \\
-$R_{out}$ ($\Omega$) & 0.96 $\Omega$ & 0.72 $\Omega$ & -25.2\% \\
+$R_{out}$ ($\Omega$) & 0.96 $\Omega$ & 0.72 $\Omega$ & 25.2\% \\
 \bottomrule
 \end{tabular}
 \end{table}
+82  & 192.0 & 1.0000 & $< 0.1$ \\
 
 \subsection{Origin of the DC Level Shift Offset ($0.85\text{ V}$ vs. $1.09\text{ V}$)}
 The measured DC transfer characteristic cleanly confirms $V_{out} < V_{in}$ with a downward shift of $0.85\text{ V}$. The theoretical prediction ($1.09\text{ V}$) assumed a nominal threshold voltage $V_{th} = 1.05\text{ V}$. However, the Vishay SI9926BDY datasheet specifies a threshold range between $V_{GS(th)} = 0.6\text{ V}$ and $1.5\text{ V}$. The observed $V_{GS} \approx 0.85\text{ V}$ directly corresponds to a device channel with $V_{th} \approx 0.80\text{ V}$, which falls squarely within standard manufacturer specifications.
