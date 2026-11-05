@@ -1,0 +1,235 @@
+
+**** 08/17/21 10:24:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "LM311-LM311_SIM"  [ C:\Modeling\LM311\PSPICE\LM311-PSpiceFiles\LM311\LM311_SIM.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "LM311_SIM.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lm311.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\LM311.net" 
+
+
+
+**** INCLUDING LM311.net ****
+* source LM311
+.EXTERNAL INPUT COL_OUT
+.EXTERNAL INPUT EMIT_OUT
+.EXTERNAL INPUT Vpu
+.EXTERNAL INPUT IN-
+.EXTERNAL INPUT IN+
+.EXTERNAL INPUT VCC+
+.EXTERNAL INPUT VCC-
+V_V1         IN+ 0  
++SIN 0 0.5 500k 0 0 0
+V_VPU         VPU 0 3.3V
+V_VINN         IN- 0 0
+V_V+         VCC+ 0 5V
+V_V-         0 VCC- 5V
+R_R1         VPU COL_OUT  10k TC=0,0 
+X_U1         IN+ IN- VCC+ VCC- VCC+ COL_OUT EMIT_OUT LM311
+R_R2         0 EMIT_OUT  1m TC=0,0 
+
+**** RESUMING LM311_SIM.cir ****
+.END
+
+**** 08/17/21 10:24:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "LM311-LM311_SIM"  [ C:\Modeling\LM311\PSPICE\LM311-PSpiceFiles\LM311\LM311_SIM.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_S1._S1   X_U1.X_S2._S2   
+         RON    1               1            
+        ROFF    1.000000E+06    1.000000E+06 
+         VON    1               0            
+        VOFF    0               1            
+
+
+               X_U1.X_U5.X_SMID._SMID 
+         RON    1            
+        ROFF    1.000000E+12 
+         VON    0            
+        VOFF    1            
+
+
+               X_U1.X_U5.X_SHIZ._SHIZ 
+         RON    1            
+        ROFF    1.000000E+12 
+         VON    0            
+        VOFF    1            
+
+
+               X_U1.X_U5.X_SVOL._SVOL 
+         RON    1            
+        ROFF    1.000000E+12 
+         VON    0            
+        VOFF    1            
+
+
+**** 08/17/21 10:24:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "LM311-LM311_SIM"  [ C:\Modeling\LM311\PSPICE\LM311-PSpiceFiles\LM311\LM311_SIM.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  IN+)    0.0000  (  IN-)    0.0000  (  VPU)    3.3000  ( VCC+)    5.0000      
+
+( VCC-)   -5.0000  (COL_OUT)    3.3000                   (EMIT_OUT) 3.300E-15   
+
+(X_U1.CMP)    4.9020                  (X_U1.N21237)    0.0000                   
+
+(X_U1.IN+BUFF)    0.0000              (X_U1.IN-BUFF)    0.0000                  
+
+(X_U1.INRANGE)   -5.0000              (X_U1.N785573)     .0020                  
+
+(X_U1.N840186)    2.4510              (X_U1.N843683)    5.0000                  
+
+(X_U1.N856907)    2.4510              (X_U1.N856913)    2.4510                  
+
+(X_U1.N857434)    2.4510              (X_U1.N884250)    9.9020                  
+
+(X_U1.X_U3.VH)    0.0000              (X_U1.X_U5.1V)    1.0000                  
+
+(X_U1.X_U7.1V)    1.0000              (X_U1.X_U3.OUT)    5.0000                 
+
+(X_U1.X_U5.MID)    0.0000             (X_U1.V+_BUFFER)    5.0000                
+
+(X_U1.V-_BUFFER)   -5.0000            (X_U1.X_U3.VMID)    0.0000                
+
+(X_U1.X_U2.N20155)    3.5100          (X_U1.X_U2.N20415)   -4.5100              
+
+(X_U1.X_U2.N20531)   -5.0000          (X_U1.X_U2.N20539)   -4.5100              
+
+(X_U1.X_U2.N20826)   -5.0000          (X_U1.X_U2.N20833)   -5.0000              
+
+(X_U1.X_U2.N20840)   -5.0000          (X_U1.X_U2.N32047)    3.5100              
+
+(X_U1.X_U3.INNNEW)    0.0000          (X_U1.X_U4.N03175)    2.4510              
+
+(X_U1.X_U5.DS_OUT)    5.0000          (X_U1.X_U5.X_U3.3)    5.0000              
+
+(X_U1.X_U5.X_U8.6)    0.0000          (X_U1.X_U7.N16955)    0.0000              
+
+(X_U1.X_U7.N16973)   10.0000          (X_U1.X_U7.N20310)    3.4900              
+
+(X_U1.X_U7.N20377)   30.0100          (X_U1.X_U2.X_U24.6)   -5.0000             
+
+(X_U1.X_U5.N778484)    3.3000         (X_U1.X_U5.N778496)    3.3000             
+
+(X_U1.X_U5.N789513)    1.0000         (X_U1.X_U5.N850209)    3.3000             
+
+(X_U1.X_U5.N857381)    5.0000         (X_U1.X_U5.N863109)    5.0100             
+
+(X_U1.X_U5.N864069)   -5.0100         (X_U1.X_U5.N864233)   -5.0000             
+
+(X_U1.X_U5.N864245)   -5.0000         (X_U1.X_U5.N864257)    4.0000             
+
+(X_U1.X_U5.N864882)    5.0000         (X_U1.X_U5.N864891)    4.0000             
+
+(X_U1.X_U5.N864896)    4.0000         (X_U1.X_U5.VSS_NEW)    4.0000             
+
+(X_U1.X_U5.X_U10.4)    1.0000         (X_U1.X_U5.X_U11.4)    5.0000             
+
+(X_U1.X_U5.X_U13.4)    4.0000         (X_U1.X_U5.X_U15.4)    4.0000             
+
+(X_U1.X_U7.N777117)    3.4900         (X_U1.X_U7.N777171)    0.0000             
+
+(X_U1.X_U7.X_U17.4)    0.0000         (X_U1.X_U5.CTRL_OUT)    5.0000            
+
+(X_U1.X_U2.X_U1.OUT2)   -5.0000       (X_U1.X_U5.X_U1.OUT2)   -5.0000           
+
+(X_U1.X_U5.X_U7.VMID)    0.0000       (X_U1.X_U7.X_U5.OUT2)    0.0000           
+
+(X_U1.X_U2.X_U21.OUT2)   -5.0000      (X_U1.X_U2.X_U22.OUT2)   -5.0000          
+
+(X_U1.X_U2.X_U23.OUT2)   -5.0000      (X_U1.X_U5.X_U12.OUT2)   -5.0000          
+
+(X_U1.X_U7.X_U13.OUT1)   10.0000      (X_U1.X_U7.X_U15.OUT2)    0.0000          
+
+(X_U1.X_U7.X_U16.OUT2)    0.0000      (X_U1.X_U5.CONTROL_HIZ)    0.0000         
+
+(X_U1.X_U5.CONTROL_MID)    1.0000     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.000E-07
+    V_VPU       -6.600E-12
+    V_VINN      -1.000E-07
+    V_V+        -5.100E-03
+    V_V-        -5.100E-03
+    X_U1.V_VOS   0.000E+00
+    X_U1.X_U2.V_VCMNP   0.000E+00
+    X_U1.X_U2.V_VCMPN   0.000E+00
+    X_U1.X_U2.V_VCMPP   0.000E+00
+    X_U1.X_U2.V_VCMNN   0.000E+00
+    X_U1.X_U5.V_VLOGIC   0.000E+00
+    X_U1.X_U5.V_V1  -1.001E-09
+    X_U1.X_U5.V_VCMPS   0.000E+00
+    X_U1.X_U5.V_VCMPS1   0.000E+00
+    X_U1.X_U7.V_VS_MIN_SET   0.000E+00
+    X_U1.X_U7.V_VS_MAX_SET   0.000E+00
+    X_U1.X_U7.V_VLOGIC   0.000E+00
+    X_U1.X_U7.V_VS_MIN_SET1   0.000E+00
+    X_U1.X_U5.X_H1.VH_H1   0.000E+00
+
+    TOTAL POWER DISSIPATION   5.10E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/17/21 10:24:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "LM311-LM311_SIM"  [ C:\Modeling\LM311\PSPICE\LM311-PSpiceFiles\LM311\LM311_SIM.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       91.50
+  Total job time (using Solver 1)   =         .09
+

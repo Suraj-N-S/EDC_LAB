@@ -1,0 +1,72 @@
+(ExpressProject "LM311"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 S018 (3945310)  [5/16/2021]-[08/17/21]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\library\lm311.olb"
+        (Type "Schematic Library")))
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "61215")
+    (NoModify)
+    (File ".\lm311.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\lm311-pspicefiles\lm311\lm311.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\lm311-pspicefiles\lm311\lm311_sim.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lm311-pspicefiles\lm311\lm311_sim.sim"
+        (DisplayName "LM311-LM311_SIM")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\lm311.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\lm311.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (LM311
+      (FullPartName "LM311.Normal")
+      (LibraryName "C:\MODELING\LM311\PSPICE\LM311.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "a0491820")
+  (LastUsedLibraryBrowseDirectory "C:\Modeling\LM311\PSPICE")
+  (ISPCBBASICLICENSE "false")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\lm311.dsn")
+      (Path "Design Resources" ".\lm311.dsn" "LM311")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library" ".\library\lm311.olb")
+      (Path "Outputs")
+      (Select "Design Resources" "Library" ".\library\lm311.olb" "INVERTER"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 391 0 692"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 0 0 5 1077 24 733")
+        (Scroll "-35 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\MODELING\LM311\PSPICE\LM311.DSN")
+      (Schematic "LM311")
+      (Page "PAGE1"))))
